@@ -36,9 +36,9 @@
 | LightGBM | f1 | 0.7573 | 0.7573 | 0.0000 |
 | LightGBM | roc_auc | 0.8255 | 0.8255 | 0.0000 |
 | LightGBM | mcc | 0.4947 | 0.4947 | 0.0000 |
-| CatBoost | accuracy | 0.7463 | 0.7463 | 0.0000 |
+| CatBoost | accuracy | 0.7463 | 0.7461 | 0.0002 |
 | CatBoost | precision | 0.7254 | 0.7254 | 0.0000 |
-| CatBoost | recall | 0.7927 | 0.7927 | 0.0000 |
-| CatBoost | f1 | 0.7576 | 0.7576 | 0.0000 |
-| CatBoost | roc_auc | 0.8276 | 0.8276 | 0.0000 |
-| CatBoost | mcc | 0.4948 | 0.4948 | 0.0000 |
+| CatBoost | recall | 0.7927 | 0.7922 | 0.0005 |
+| CatBoost | f1 | 0.7576 | 0.7573 | 0.0003 |
+| CatBoost | roc_auc | 0.8276 | 0.8278 | 0.0002 |
+| CatBoost | mcc | 0.4948 | 0.4944 | 0.0004 |
