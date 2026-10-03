@@ -1,0 +1,13 @@
+| model | metric | reported | reproduced | abs_diff |
+|---|---|---|---|---|
+| Weighted Soft Voting | accuracy | 0.8672 | 0.8671 | 0.0001 |
+| Weighted Soft Voting | precision | 0.5958 | 0.5950 | 0.0008 |
+| Weighted Soft Voting | recall | 0.1449 | 0.1447 | 0.0002 |
+| Weighted Soft Voting | f1 | 0.2330 | 0.2327 | 0.0003 |
+| Weighted Soft Voting | roc_auc | 0.8307 | 0.8307 | 0.0000 |
+| Weighted Soft Voting | mcc | 0.2468 | 0.2464 | 0.0004 |
+| CatBoost (validation) | roc_auc | 0.8286 | 0.8286 | 0.0000 |
+| XGBoost (validation) | roc_auc | 0.8285 | 0.8285 | 0.0000 |
+| HistGradientBoosting (validation) | roc_auc | 0.8285 | 0.8285 | 0.0000 |
+| LightGBM (validation) | roc_auc | 0.8282 | 0.8282 | 0.0000 |
+| ExtraTrees (validation) | roc_auc | 0.7962 | 0.7953 | 0.0009 |

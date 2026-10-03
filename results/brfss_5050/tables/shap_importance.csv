@@ -1,0 +1,16 @@
+feature,mean_abs_shap
+GenHlth,0.58955
+BMI,0.52233
+Age,0.42154
+HighChol,0.35973
+HighBP,0.33457
+Income,0.12631
+HeartDiseaseorAttack,0.1216
+DiffWalk,0.07403
+CholCheck,0.06798
+Education,0.06365
+HvyAlcoholConsump,0.06227
+MentHlth,0.06169
+PhysHlth,0.04086
+Stroke,0.03747
+PhysActivity,0.02014

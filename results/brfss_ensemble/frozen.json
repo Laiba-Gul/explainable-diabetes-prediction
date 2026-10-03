@@ -1,0 +1,38 @@
+{
+  "selected_model": "CatBoost",
+  "selection_metric": "roc_auc",
+  "threshold_policy": "accuracy",
+  "thresholds": {
+    "Logistic Regression": 0.505,
+    "ExtraTrees": 0.679,
+    "HistGradientBoosting": 0.556,
+    "XGBoost": 0.497,
+    "LightGBM": 0.557,
+    "CatBoost": 0.506,
+    "OOF Stacking": 0.541,
+    "Weighted Soft Voting": 0.518
+  },
+  "selected_features": [
+    "HighBP",
+    "HighChol",
+    "CholCheck",
+    "BMI",
+    "Smoker",
+    "Stroke",
+    "HeartDiseaseorAttack",
+    "PhysActivity",
+    "Fruits",
+    "Veggies",
+    "HvyAlcoholConsump",
+    "AnyHealthcare",
+    "NoDocbcCost",
+    "GenHlth",
+    "MentHlth",
+    "PhysHlth",
+    "DiffWalk",
+    "Sex",
+    "Age",
+    "Education",
+    "Income"
+  ]
+}

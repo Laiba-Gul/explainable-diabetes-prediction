@@ -1,0 +1,6 @@
+model,weight
+ExtraTrees,0.0125
+HistGradientBoosting,0.4388
+XGBoost,0.0963
+LightGBM,0.0516
+CatBoost,0.4008

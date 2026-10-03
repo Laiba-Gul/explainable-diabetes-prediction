@@ -1,0 +1,3 @@
+| model | family | split | accuracy | precision | recall | specificity | f1 | roc_auc | pr_auc | mcc | brier | log_loss | threshold | tn | fp | fn | tp | roc_auc_ci_low | roc_auc_ci_high | pr_auc_ci_low | pr_auc_ci_high | f1_ci_low | f1_ci_high | mcc_ci_low | mcc_ci_high | recall_ci_low | recall_ci_high |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| CatBoost | Ensemble | test | 0.8245 | 0.4045 | 0.5490 | 0.8691 | 0.4658 | 0.8303 | 0.4261 | 0.3698 | 0.0970 | 0.3124 | 0.2610 | 28464 | 4286 | 2391 | 2911 | 0.8249 | 0.8359 | 0.4116 | 0.4406 | 0.4554 | 0.4760 | 0.3572 | 0.3814 | 0.5346 | 0.5623 |

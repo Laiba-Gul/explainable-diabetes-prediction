@@ -1,0 +1,23 @@
+| feature | mean_abs_shap |
+|---|---|
+| GenHlth | 0.6214 |
+| BMI | 0.4658 |
+| Age | 0.4556 |
+| HighBP | 0.3991 |
+| HighChol | 0.3606 |
+| Income | 0.1501 |
+| Sex | 0.1421 |
+| CholCheck | 0.1097 |
+| HeartDiseaseorAttack | 0.0816 |
+| HvyAlcoholConsump | 0.0748 |
+| MentHlth | 0.0621 |
+| DiffWalk | 0.0605 |
+| Education | 0.0553 |
+| PhysHlth | 0.0382 |
+| Fruits | 0.0280 |
+| Smoker | 0.0243 |
+| PhysActivity | 0.0231 |
+| Stroke | 0.0223 |
+| Veggies | 0.0154 |
+| AnyHealthcare | 0.0109 |
+| NoDocbcCost | 0.0063 |

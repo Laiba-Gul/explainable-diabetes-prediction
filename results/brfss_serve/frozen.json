@@ -1,0 +1,31 @@
+{
+  "selected_model": "CatBoost",
+  "selection_metric": "roc_auc",
+  "threshold_policy": "f1",
+  "thresholds": {
+    "CatBoost": 0.261
+  },
+  "selected_features": [
+    "HighBP",
+    "HighChol",
+    "CholCheck",
+    "BMI",
+    "Smoker",
+    "Stroke",
+    "HeartDiseaseorAttack",
+    "PhysActivity",
+    "Fruits",
+    "Veggies",
+    "HvyAlcoholConsump",
+    "AnyHealthcare",
+    "NoDocbcCost",
+    "GenHlth",
+    "MentHlth",
+    "PhysHlth",
+    "DiffWalk",
+    "Sex",
+    "Age",
+    "Education",
+    "Income"
+  ]
+}

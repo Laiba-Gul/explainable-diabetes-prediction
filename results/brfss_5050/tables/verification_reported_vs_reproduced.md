@@ -1,0 +1,44 @@
+| model | metric | reported | reproduced | abs_diff |
+|---|---|---|---|---|
+| Logistic Regression | accuracy | 0.7473 | 0.7473 | 0.0000 |
+| Logistic Regression | precision | 0.7374 | 0.7374 | 0.0000 |
+| Logistic Regression | recall | 0.7680 | 0.7680 | 0.0000 |
+| Logistic Regression | f1 | 0.7524 | 0.7524 | 0.0000 |
+| Logistic Regression | roc_auc | 0.8235 | 0.8235 | 0.0000 |
+| Logistic Regression | mcc | 0.4950 | 0.4950 | 0.0000 |
+| SVM (calibrated LinearSVC) | accuracy | 0.7471 | 0.7471 | 0.0000 |
+| SVM (calibrated LinearSVC) | precision | 0.7367 | 0.7367 | 0.0000 |
+| SVM (calibrated LinearSVC) | recall | 0.7690 | 0.7690 | 0.0000 |
+| SVM (calibrated LinearSVC) | f1 | 0.7525 | 0.7525 | 0.0000 |
+| SVM (calibrated LinearSVC) | roc_auc | 0.8232 | 0.8232 | 0.0000 |
+| SVM (calibrated LinearSVC) | mcc | 0.4946 | 0.4946 | 0.0000 |
+| Decision Tree | accuracy | 0.7302 | 0.7302 | 0.0000 |
+| Decision Tree | precision | 0.7125 | 0.7125 | 0.0000 |
+| Decision Tree | recall | 0.7718 | 0.7718 | 0.0000 |
+| Decision Tree | f1 | 0.7410 | 0.7410 | 0.0000 |
+| Decision Tree | roc_auc | 0.8074 | 0.8074 | 0.0000 |
+| Decision Tree | mcc | 0.4620 | 0.4620 | 0.0000 |
+| Random Forest | accuracy | 0.7409 | 0.7411 | 0.0002 |
+| Random Forest | precision | 0.7217 | 0.7218 | 0.0001 |
+| Random Forest | recall | 0.7844 | 0.7848 | 0.0004 |
+| Random Forest | f1 | 0.7517 | 0.7520 | 0.0003 |
+| Random Forest | roc_auc | 0.8161 | 0.8161 | 0.0000 |
+| Random Forest | mcc | 0.4837 | 0.4841 | 0.0004 |
+| XGBoost | accuracy | 0.7469 | 0.7469 | 0.0000 |
+| XGBoost | precision | 0.7269 | 0.7269 | 0.0000 |
+| XGBoost | recall | 0.7908 | 0.7908 | 0.0000 |
+| XGBoost | f1 | 0.7575 | 0.7575 | 0.0000 |
+| XGBoost | roc_auc | 0.8269 | 0.8269 | 0.0000 |
+| XGBoost | mcc | 0.4957 | 0.4957 | 0.0000 |
+| LightGBM | accuracy | 0.7463 | 0.7463 | 0.0000 |
+| LightGBM | precision | 0.7259 | 0.7259 | 0.0000 |
+| LightGBM | recall | 0.7916 | 0.7916 | 0.0000 |
+| LightGBM | f1 | 0.7573 | 0.7573 | 0.0000 |
+| LightGBM | roc_auc | 0.8255 | 0.8255 | 0.0000 |
+| LightGBM | mcc | 0.4947 | 0.4947 | 0.0000 |
+| CatBoost | accuracy | 0.7463 | 0.7463 | 0.0000 |
+| CatBoost | precision | 0.7254 | 0.7254 | 0.0000 |
+| CatBoost | recall | 0.7927 | 0.7927 | 0.0000 |
+| CatBoost | f1 | 0.7576 | 0.7576 | 0.0000 |
+| CatBoost | roc_auc | 0.8276 | 0.8276 | 0.0000 |
+| CatBoost | mcc | 0.4948 | 0.4948 | 0.0000 |
