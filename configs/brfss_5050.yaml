@@ -1,0 +1,31 @@
+# Reproduces notebook "Early_Diabetes_XAI_5050_Colab" on the pre-balanced 50/50 file.
+# The training split is already ~1:1, so the automatic rule skips SMOTE-NC.
+# NOTE: a 50/50 sample does not reflect population prevalence; precision here is
+# not the precision you would see in real-world screening.
+experiment: brfss_5050
+title: BRFSS 2015 50/50 sample
+dataset: brfss_5050
+seed: 42
+feature_selection: {method: consensus, k: 15}
+balance: {method: smote_nc, sampling_strategy: 1.0, min_ratio: 1.2}
+threshold_policy: fixed
+selection_metric: roc_auc
+bootstrap: 500
+export_model: false
+models:
+  Logistic Regression: {type: logistic_regression, family: Machine Learning, params: {max_iter: 2000, solver: lbfgs}}
+  SVM (calibrated LinearSVC): {type: linear_svm_calibrated, family: Machine Learning, params: {C: 1.0}}
+  Decision Tree: {type: decision_tree, family: Machine Learning, params: {max_depth: 10, min_samples_leaf: 20}}
+  Random Forest: {type: random_forest, params: {n_estimators: 400, min_samples_leaf: 2}}
+  XGBoost: {type: xgboost, params: {n_estimators: 500, max_depth: 5, learning_rate: 0.05, subsample: 0.85, colsample_bytree: 0.85}}
+  LightGBM: {type: lightgbm, params: {n_estimators: 500, learning_rate: 0.05, num_leaves: 31, subsample: 0.85, colsample_bytree: 0.85}}
+  CatBoost: {type: catboost, params: {iterations: 500, depth: 7, learning_rate: 0.05}}
+reported:
+  test:
+    Logistic Regression: {accuracy: 0.7473, precision: 0.7374, recall: 0.7680, f1: 0.7524, roc_auc: 0.8235, mcc: 0.4950}
+    SVM (calibrated LinearSVC): {accuracy: 0.7471, precision: 0.7367, recall: 0.7690, f1: 0.7525, roc_auc: 0.8232, mcc: 0.4946}
+    Decision Tree: {accuracy: 0.7302, precision: 0.7125, recall: 0.7718, f1: 0.7410, roc_auc: 0.8074, mcc: 0.4620}
+    Random Forest: {accuracy: 0.7409, precision: 0.7217, recall: 0.7844, f1: 0.7517, roc_auc: 0.8161, mcc: 0.4837}
+    XGBoost: {accuracy: 0.7469, precision: 0.7269, recall: 0.7908, f1: 0.7575, roc_auc: 0.8269, mcc: 0.4957}
+    LightGBM: {accuracy: 0.7463, precision: 0.7259, recall: 0.7916, f1: 0.7573, roc_auc: 0.8255, mcc: 0.4947}
+    CatBoost: {accuracy: 0.7463, precision: 0.7254, recall: 0.7927, f1: 0.7576, roc_auc: 0.8276, mcc: 0.4948}

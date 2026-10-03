@@ -1,0 +1,606 @@
+\begin{tabular}{llrrrrrrrr}
+\toprule
+protocol & model & fold & accuracy & roc\_auc & f1 & recall & precision & mcc & specificity \\
+\midrule
+leakage-safe & Logistic Regression & 0 & 0.7208 & 0.8328 & 0.6504 & 0.7407 & 0.5797 & 0.4325 & 0.7100 \\
+leakage-safe & Random Forest & 0 & 0.7857 & 0.8552 & 0.7227 & 0.7963 & 0.6615 & 0.5568 & 0.7800 \\
+leakage-safe & Extra Trees & 0 & 0.7987 & 0.8628 & 0.7480 & 0.8519 & 0.6667 & 0.5967 & 0.7700 \\
+leakage-safe & XGBoost & 0 & 0.7987 & 0.8572 & 0.7438 & 0.8333 & 0.6716 & 0.5903 & 0.7800 \\
+leakage-safe & LightGBM & 0 & 0.7792 & 0.8330 & 0.7069 & 0.7593 & 0.6613 & 0.5344 & 0.7900 \\
+leakage-safe & CatBoost & 0 & 0.7727 & 0.8417 & 0.7059 & 0.7778 & 0.6462 & 0.5292 & 0.7700 \\
+leakage-safe & HEF-IAI Stacking & 0 & 0.7922 & 0.8544 & 0.7288 & 0.7963 & 0.6719 & 0.5677 & 0.7900 \\
+leakage-safe & Soft Voting (2:1:1) & 0 & 0.8117 & 0.8526 & 0.7603 & 0.8519 & 0.6866 & 0.6178 & 0.7900 \\
+leakage-safe & Logistic Regression & 1 & 0.7922 & 0.8611 & 0.7143 & 0.7407 & 0.6897 & 0.5522 & 0.8200 \\
+leakage-safe & Random Forest & 1 & 0.7532 & 0.8269 & 0.6545 & 0.6667 & 0.6429 & 0.4629 & 0.8000 \\
+leakage-safe & Extra Trees & 1 & 0.7662 & 0.8448 & 0.6842 & 0.7222 & 0.6500 & 0.5012 & 0.7900 \\
+leakage-safe & XGBoost & 1 & 0.7468 & 0.8394 & 0.6609 & 0.7037 & 0.6230 & 0.4622 & 0.7700 \\
+leakage-safe & LightGBM & 1 & 0.7468 & 0.8309 & 0.6422 & 0.6481 & 0.6364 & 0.4463 & 0.8000 \\
+leakage-safe & CatBoost & 1 & 0.7468 & 0.8437 & 0.6549 & 0.6852 & 0.6271 & 0.4566 & 0.7800 \\
+leakage-safe & HEF-IAI Stacking & 1 & 0.7727 & 0.8487 & 0.6789 & 0.6852 & 0.6727 & 0.5031 & 0.8200 \\
+leakage-safe & Soft Voting (2:1:1) & 1 & 0.7468 & 0.8481 & 0.6549 & 0.6852 & 0.6271 & 0.4566 & 0.7800 \\
+leakage-safe & Logistic Regression & 2 & 0.7987 & 0.8556 & 0.7156 & 0.7222 & 0.7091 & 0.5599 & 0.8400 \\
+leakage-safe & Random Forest & 2 & 0.7987 & 0.8474 & 0.7207 & 0.7407 & 0.7018 & 0.5640 & 0.8300 \\
+leakage-safe & Extra Trees & 2 & 0.7727 & 0.8539 & 0.6903 & 0.7222 & 0.6610 & 0.5126 & 0.8000 \\
+leakage-safe & XGBoost & 2 & 0.7662 & 0.8393 & 0.6786 & 0.7037 & 0.6552 & 0.4960 & 0.8000 \\
+leakage-safe & LightGBM & 2 & 0.7987 & 0.8420 & 0.7156 & 0.7222 & 0.7091 & 0.5599 & 0.8400 \\
+leakage-safe & CatBoost & 2 & 0.7727 & 0.8439 & 0.6729 & 0.6667 & 0.6792 & 0.4988 & 0.8300 \\
+leakage-safe & HEF-IAI Stacking & 2 & 0.7727 & 0.8552 & 0.6667 & 0.6481 & 0.6863 & 0.4949 & 0.8400 \\
+leakage-safe & Soft Voting (2:1:1) & 2 & 0.7792 & 0.8491 & 0.6909 & 0.7037 & 0.6786 & 0.5195 & 0.8200 \\
+leakage-safe & Logistic Regression & 3 & 0.7712 & 0.8389 & 0.6847 & 0.7170 & 0.6552 & 0.5070 & 0.8000 \\
+leakage-safe & Random Forest & 3 & 0.7778 & 0.8238 & 0.7018 & 0.7547 & 0.6557 & 0.5294 & 0.7900 \\
+leakage-safe & Extra Trees & 3 & 0.7843 & 0.8430 & 0.7179 & 0.7925 & 0.6562 & 0.5522 & 0.7800 \\
+leakage-safe & XGBoost & 3 & 0.7386 & 0.8102 & 0.6491 & 0.6981 & 0.6066 & 0.4452 & 0.7600 \\
+leakage-safe & LightGBM & 3 & 0.7386 & 0.8070 & 0.6429 & 0.6792 & 0.6102 & 0.4392 & 0.7700 \\
+leakage-safe & CatBoost & 3 & 0.7516 & 0.8204 & 0.6607 & 0.6981 & 0.6271 & 0.4674 & 0.7800 \\
+leakage-safe & HEF-IAI Stacking & 3 & 0.7582 & 0.8345 & 0.6667 & 0.6981 & 0.6379 & 0.4787 & 0.7900 \\
+leakage-safe & Soft Voting (2:1:1) & 3 & 0.7516 & 0.8242 & 0.6667 & 0.7170 & 0.6230 & 0.4733 & 0.7700 \\
+leakage-safe & Logistic Regression & 4 & 0.6797 & 0.8092 & 0.6142 & 0.7358 & 0.5270 & 0.3674 & 0.6500 \\
+leakage-safe & Random Forest & 4 & 0.6732 & 0.7812 & 0.6032 & 0.7170 & 0.5205 & 0.3496 & 0.6500 \\
+leakage-safe & Extra Trees & 4 & 0.6405 & 0.7770 & 0.5802 & 0.7170 & 0.4872 & 0.3017 & 0.6000 \\
+leakage-safe & XGBoost & 4 & 0.6928 & 0.7838 & 0.6050 & 0.6792 & 0.5455 & 0.3644 & 0.7000 \\
+leakage-safe & LightGBM & 4 & 0.7320 & 0.7725 & 0.6435 & 0.6981 & 0.5968 & 0.4343 & 0.7500 \\
+leakage-safe & CatBoost & 4 & 0.6667 & 0.7681 & 0.5854 & 0.6792 & 0.5143 & 0.3240 & 0.6600 \\
+leakage-safe & HEF-IAI Stacking & 4 & 0.6732 & 0.7770 & 0.5902 & 0.6792 & 0.5217 & 0.3340 & 0.6700 \\
+leakage-safe & Soft Voting (2:1:1) & 4 & 0.6732 & 0.7757 & 0.5902 & 0.6792 & 0.5217 & 0.3340 & 0.6700 \\
+leakage-safe & Logistic Regression & 5 & 0.7078 & 0.7778 & 0.6218 & 0.6852 & 0.5692 & 0.3915 & 0.7200 \\
+leakage-safe & Random Forest & 5 & 0.7013 & 0.7610 & 0.6167 & 0.6852 & 0.5606 & 0.3811 & 0.7100 \\
+leakage-safe & Extra Trees & 5 & 0.7078 & 0.7852 & 0.6341 & 0.7222 & 0.5652 & 0.4051 & 0.7000 \\
+leakage-safe & XGBoost & 5 & 0.6948 & 0.7620 & 0.5983 & 0.6481 & 0.5556 & 0.3573 & 0.7200 \\
+leakage-safe & LightGBM & 5 & 0.7208 & 0.7637 & 0.6261 & 0.6667 & 0.5902 & 0.4065 & 0.7500 \\
+leakage-safe & CatBoost & 5 & 0.6883 & 0.7654 & 0.5932 & 0.6481 & 0.5469 & 0.3468 & 0.7100 \\
+leakage-safe & HEF-IAI Stacking & 5 & 0.7013 & 0.7756 & 0.5965 & 0.6296 & 0.5667 & 0.3617 & 0.7400 \\
+leakage-safe & Soft Voting (2:1:1) & 5 & 0.6948 & 0.7694 & 0.5983 & 0.6481 & 0.5556 & 0.3573 & 0.7200 \\
+leakage-safe & Logistic Regression & 6 & 0.7532 & 0.8422 & 0.6724 & 0.7222 & 0.6290 & 0.4789 & 0.7700 \\
+leakage-safe & Random Forest & 6 & 0.7532 & 0.8168 & 0.6667 & 0.7037 & 0.6333 & 0.4733 & 0.7800 \\
+leakage-safe & Extra Trees & 6 & 0.7532 & 0.8202 & 0.6667 & 0.7037 & 0.6333 & 0.4733 & 0.7800 \\
+leakage-safe & XGBoost & 6 & 0.7403 & 0.8222 & 0.6364 & 0.6481 & 0.6250 & 0.4346 & 0.7900 \\
+leakage-safe & LightGBM & 6 & 0.7468 & 0.8206 & 0.6355 & 0.6296 & 0.6415 & 0.4416 & 0.8100 \\
+leakage-safe & CatBoost & 6 & 0.7403 & 0.8191 & 0.6429 & 0.6667 & 0.6207 & 0.4399 & 0.7800 \\
+leakage-safe & HEF-IAI Stacking & 6 & 0.7532 & 0.8222 & 0.6607 & 0.6852 & 0.6379 & 0.4680 & 0.7900 \\
+leakage-safe & Soft Voting (2:1:1) & 6 & 0.7532 & 0.8230 & 0.6667 & 0.7037 & 0.6333 & 0.4733 & 0.7800 \\
+leakage-safe & Logistic Regression & 7 & 0.7987 & 0.8763 & 0.6990 & 0.6667 & 0.7347 & 0.5498 & 0.8700 \\
+leakage-safe & Random Forest & 7 & 0.8052 & 0.8710 & 0.7222 & 0.7222 & 0.7222 & 0.5722 & 0.8500 \\
+leakage-safe & Extra Trees & 7 & 0.8247 & 0.8969 & 0.7477 & 0.7407 & 0.7547 & 0.6134 & 0.8700 \\
+leakage-safe & XGBoost & 7 & 0.7857 & 0.8526 & 0.6972 & 0.7037 & 0.6909 & 0.5315 & 0.8300 \\
+leakage-safe & LightGBM & 7 & 0.7792 & 0.8370 & 0.7018 & 0.7407 & 0.6667 & 0.5291 & 0.8000 \\
+leakage-safe & CatBoost & 7 & 0.7987 & 0.8617 & 0.7103 & 0.7037 & 0.7170 & 0.5561 & 0.8500 \\
+leakage-safe & HEF-IAI Stacking & 7 & 0.8117 & 0.8859 & 0.7184 & 0.6852 & 0.7551 & 0.5790 & 0.8800 \\
+leakage-safe & Soft Voting (2:1:1) & 7 & 0.8117 & 0.8709 & 0.7290 & 0.7222 & 0.7358 & 0.5848 & 0.8600 \\
+leakage-safe & Logistic Regression & 8 & 0.7386 & 0.8325 & 0.6721 & 0.7736 & 0.5942 & 0.4720 & 0.7200 \\
+leakage-safe & Random Forest & 8 & 0.7516 & 0.8274 & 0.6885 & 0.7925 & 0.6087 & 0.4996 & 0.7300 \\
+leakage-safe & Extra Trees & 8 & 0.7386 & 0.8406 & 0.6825 & 0.8113 & 0.5890 & 0.4871 & 0.7000 \\
+leakage-safe & XGBoost & 8 & 0.7190 & 0.8249 & 0.6504 & 0.7547 & 0.5714 & 0.4343 & 0.7000 \\
+leakage-safe & LightGBM & 8 & 0.7190 & 0.8166 & 0.6261 & 0.6792 & 0.5806 & 0.4063 & 0.7400 \\
+leakage-safe & CatBoost & 8 & 0.7386 & 0.8304 & 0.6610 & 0.7358 & 0.6000 & 0.4580 & 0.7400 \\
+leakage-safe & HEF-IAI Stacking & 8 & 0.7451 & 0.8370 & 0.6723 & 0.7547 & 0.6061 & 0.4753 & 0.7400 \\
+leakage-safe & Soft Voting (2:1:1) & 8 & 0.7386 & 0.8321 & 0.6721 & 0.7736 & 0.5942 & 0.4720 & 0.7200 \\
+leakage-safe & Logistic Regression & 9 & 0.7843 & 0.8479 & 0.7179 & 0.7925 & 0.6562 & 0.5522 & 0.7800 \\
+leakage-safe & Random Forest & 9 & 0.7582 & 0.8386 & 0.6891 & 0.7736 & 0.6212 & 0.5030 & 0.7500 \\
+leakage-safe & Extra Trees & 9 & 0.7516 & 0.8475 & 0.6885 & 0.7925 & 0.6087 & 0.4996 & 0.7300 \\
+leakage-safe & XGBoost & 9 & 0.7582 & 0.8602 & 0.6726 & 0.7170 & 0.6333 & 0.4844 & 0.7800 \\
+leakage-safe & LightGBM & 9 & 0.7582 & 0.8623 & 0.6838 & 0.7547 & 0.6250 & 0.4965 & 0.7600 \\
+leakage-safe & CatBoost & 9 & 0.7516 & 0.8572 & 0.6724 & 0.7358 & 0.6190 & 0.4794 & 0.7600 \\
+leakage-safe & HEF-IAI Stacking & 9 & 0.7582 & 0.8564 & 0.6783 & 0.7358 & 0.6290 & 0.4903 & 0.7700 \\
+leakage-safe & Soft Voting (2:1:1) & 9 & 0.7516 & 0.8600 & 0.6724 & 0.7358 & 0.6190 & 0.4794 & 0.7600 \\
+leakage-safe & Logistic Regression & 10 & 0.7597 & 0.8580 & 0.6726 & 0.7037 & 0.6441 & 0.4846 & 0.7900 \\
+leakage-safe & Random Forest & 10 & 0.7987 & 0.8578 & 0.7257 & 0.7593 & 0.6949 & 0.5686 & 0.8200 \\
+leakage-safe & Extra Trees & 10 & 0.7792 & 0.8622 & 0.7119 & 0.7778 & 0.6562 & 0.5401 & 0.7800 \\
+leakage-safe & XGBoost & 10 & 0.7922 & 0.8637 & 0.7193 & 0.7593 & 0.6833 & 0.5570 & 0.8100 \\
+leakage-safe & LightGBM & 10 & 0.7727 & 0.8556 & 0.6847 & 0.7037 & 0.6667 & 0.5077 & 0.8100 \\
+leakage-safe & CatBoost & 10 & 0.7922 & 0.8674 & 0.7143 & 0.7407 & 0.6897 & 0.5522 & 0.8200 \\
+leakage-safe & HEF-IAI Stacking & 10 & 0.7857 & 0.8656 & 0.7080 & 0.7407 & 0.6780 & 0.5406 & 0.8100 \\
+leakage-safe & Soft Voting (2:1:1) & 10 & 0.7922 & 0.8685 & 0.7143 & 0.7407 & 0.6897 & 0.5522 & 0.8200 \\
+leakage-safe & Logistic Regression & 11 & 0.7078 & 0.7831 & 0.6218 & 0.6852 & 0.5692 & 0.3915 & 0.7200 \\
+leakage-safe & Random Forest & 11 & 0.7273 & 0.7915 & 0.6667 & 0.7778 & 0.5833 & 0.4569 & 0.7000 \\
+leakage-safe & Extra Trees & 11 & 0.7013 & 0.8198 & 0.6462 & 0.7778 & 0.5526 & 0.4178 & 0.6600 \\
+leakage-safe & XGBoost & 11 & 0.7273 & 0.8130 & 0.6719 & 0.7963 & 0.5811 & 0.4644 & 0.6900 \\
+leakage-safe & LightGBM & 11 & 0.7403 & 0.8070 & 0.6875 & 0.8148 & 0.5946 & 0.4917 & 0.7000 \\
+leakage-safe & CatBoost & 11 & 0.7338 & 0.8183 & 0.6720 & 0.7778 & 0.5915 & 0.4669 & 0.7100 \\
+leakage-safe & HEF-IAI Stacking & 11 & 0.7338 & 0.8230 & 0.6720 & 0.7778 & 0.5915 & 0.4669 & 0.7100 \\
+leakage-safe & Soft Voting (2:1:1) & 11 & 0.7338 & 0.8211 & 0.6720 & 0.7778 & 0.5915 & 0.4669 & 0.7100 \\
+leakage-safe & Logistic Regression & 12 & 0.8117 & 0.8578 & 0.7290 & 0.7222 & 0.7358 & 0.5848 & 0.8600 \\
+leakage-safe & Random Forest & 12 & 0.7532 & 0.8331 & 0.6607 & 0.6852 & 0.6379 & 0.4680 & 0.7900 \\
+leakage-safe & Extra Trees & 12 & 0.7532 & 0.8376 & 0.6667 & 0.7037 & 0.6333 & 0.4733 & 0.7800 \\
+leakage-safe & XGBoost & 12 & 0.7662 & 0.8333 & 0.6842 & 0.7222 & 0.6500 & 0.5012 & 0.7900 \\
+leakage-safe & LightGBM & 12 & 0.7597 & 0.8056 & 0.6606 & 0.6667 & 0.6545 & 0.4747 & 0.8100 \\
+leakage-safe & CatBoost & 12 & 0.7792 & 0.8361 & 0.6792 & 0.6667 & 0.6923 & 0.5112 & 0.8400 \\
+leakage-safe & HEF-IAI Stacking & 12 & 0.7792 & 0.8428 & 0.6852 & 0.6852 & 0.6852 & 0.5152 & 0.8300 \\
+leakage-safe & Soft Voting (2:1:1) & 12 & 0.7857 & 0.8391 & 0.6972 & 0.7037 & 0.6909 & 0.5315 & 0.8300 \\
+leakage-safe & Logistic Regression & 13 & 0.7843 & 0.8851 & 0.7179 & 0.7925 & 0.6562 & 0.5522 & 0.7800 \\
+leakage-safe & Random Forest & 13 & 0.7712 & 0.8494 & 0.6903 & 0.7358 & 0.6500 & 0.5125 & 0.7900 \\
+leakage-safe & Extra Trees & 13 & 0.7712 & 0.8623 & 0.7009 & 0.7736 & 0.6406 & 0.5243 & 0.7700 \\
+leakage-safe & XGBoost & 13 & 0.7386 & 0.8321 & 0.6610 & 0.7358 & 0.6000 & 0.4580 & 0.7400 \\
+leakage-safe & LightGBM & 13 & 0.7190 & 0.8364 & 0.6387 & 0.7170 & 0.5758 & 0.4198 & 0.7200 \\
+leakage-safe & CatBoost & 13 & 0.7516 & 0.8517 & 0.6667 & 0.7170 & 0.6230 & 0.4733 & 0.7700 \\
+leakage-safe & HEF-IAI Stacking & 13 & 0.7647 & 0.8558 & 0.6727 & 0.6981 & 0.6491 & 0.4902 & 0.8000 \\
+leakage-safe & Soft Voting (2:1:1) & 13 & 0.7451 & 0.8508 & 0.6609 & 0.7170 & 0.6129 & 0.4623 & 0.7600 \\
+leakage-safe & Logistic Regression & 14 & 0.7255 & 0.8042 & 0.6441 & 0.7170 & 0.5846 & 0.4303 & 0.7300 \\
+leakage-safe & Random Forest & 14 & 0.7516 & 0.7953 & 0.6724 & 0.7358 & 0.6190 & 0.4794 & 0.7600 \\
+leakage-safe & Extra Trees & 14 & 0.7320 & 0.7851 & 0.6435 & 0.6981 & 0.5968 & 0.4343 & 0.7500 \\
+leakage-safe & XGBoost & 14 & 0.7190 & 0.7885 & 0.6325 & 0.6981 & 0.5781 & 0.4130 & 0.7300 \\
+leakage-safe & LightGBM & 14 & 0.7059 & 0.7734 & 0.6087 & 0.6604 & 0.5645 & 0.3784 & 0.7300 \\
+leakage-safe & CatBoost & 14 & 0.7190 & 0.7874 & 0.6325 & 0.6981 & 0.5781 & 0.4130 & 0.7300 \\
+leakage-safe & HEF-IAI Stacking & 14 & 0.7320 & 0.7900 & 0.6435 & 0.6981 & 0.5968 & 0.4343 & 0.7500 \\
+leakage-safe & Soft Voting (2:1:1) & 14 & 0.7255 & 0.7900 & 0.6500 & 0.7358 & 0.5821 & 0.4372 & 0.7200 \\
+leakage-safe & Logistic Regression & 15 & 0.7727 & 0.8567 & 0.6847 & 0.7037 & 0.6667 & 0.5077 & 0.8100 \\
+leakage-safe & Random Forest & 15 & 0.7922 & 0.8542 & 0.7241 & 0.7778 & 0.6774 & 0.5622 & 0.8000 \\
+leakage-safe & Extra Trees & 15 & 0.7727 & 0.8563 & 0.6957 & 0.7407 & 0.6557 & 0.5178 & 0.7900 \\
+leakage-safe & XGBoost & 15 & 0.7857 & 0.8535 & 0.7130 & 0.7593 & 0.6721 & 0.5456 & 0.8000 \\
+leakage-safe & LightGBM & 15 & 0.7662 & 0.8539 & 0.6897 & 0.7407 & 0.6452 & 0.5067 & 0.7800 \\
+leakage-safe & CatBoost & 15 & 0.7922 & 0.8630 & 0.7193 & 0.7593 & 0.6833 & 0.5570 & 0.8100 \\
+leakage-safe & HEF-IAI Stacking & 15 & 0.7792 & 0.8643 & 0.7069 & 0.7593 & 0.6613 & 0.5344 & 0.7900 \\
+leakage-safe & Soft Voting (2:1:1) & 15 & 0.7857 & 0.8630 & 0.7130 & 0.7593 & 0.6721 & 0.5456 & 0.8000 \\
+leakage-safe & Logistic Regression & 16 & 0.7727 & 0.8726 & 0.7107 & 0.7963 & 0.6418 & 0.5354 & 0.7600 \\
+leakage-safe & Random Forest & 16 & 0.7403 & 0.8166 & 0.6429 & 0.6667 & 0.6207 & 0.4399 & 0.7800 \\
+leakage-safe & Extra Trees & 16 & 0.7597 & 0.8319 & 0.6838 & 0.7407 & 0.6349 & 0.4957 & 0.7700 \\
+leakage-safe & XGBoost & 16 & 0.7338 & 0.8126 & 0.6496 & 0.7037 & 0.6032 & 0.4403 & 0.7500 \\
+leakage-safe & LightGBM & 16 & 0.7273 & 0.7991 & 0.6441 & 0.7037 & 0.5938 & 0.4296 & 0.7400 \\
+leakage-safe & CatBoost & 16 & 0.7727 & 0.8157 & 0.6957 & 0.7407 & 0.6557 & 0.5178 & 0.7900 \\
+leakage-safe & HEF-IAI Stacking & 16 & 0.7662 & 0.8256 & 0.6786 & 0.7037 & 0.6552 & 0.4960 & 0.8000 \\
+leakage-safe & Soft Voting (2:1:1) & 16 & 0.7597 & 0.8237 & 0.6783 & 0.7222 & 0.6393 & 0.4900 & 0.7800 \\
+leakage-safe & Logistic Regression & 17 & 0.7273 & 0.8185 & 0.6441 & 0.7037 & 0.5938 & 0.4296 & 0.7400 \\
+leakage-safe & Random Forest & 17 & 0.7662 & 0.8244 & 0.7000 & 0.7778 & 0.6364 & 0.5185 & 0.7600 \\
+leakage-safe & Extra Trees & 17 & 0.7468 & 0.8324 & 0.6929 & 0.8148 & 0.6027 & 0.5015 & 0.7100 \\
+leakage-safe & XGBoost & 17 & 0.7338 & 0.8224 & 0.6555 & 0.7222 & 0.6000 & 0.4466 & 0.7400 \\
+leakage-safe & LightGBM & 17 & 0.7403 & 0.8089 & 0.6721 & 0.7593 & 0.6029 & 0.4701 & 0.7300 \\
+leakage-safe & CatBoost & 17 & 0.7922 & 0.8330 & 0.7333 & 0.8148 & 0.6667 & 0.5735 & 0.7800 \\
+leakage-safe & HEF-IAI Stacking & 17 & 0.7857 & 0.8357 & 0.7227 & 0.7963 & 0.6615 & 0.5568 & 0.7800 \\
+leakage-safe & Soft Voting (2:1:1) & 17 & 0.7727 & 0.8324 & 0.7107 & 0.7963 & 0.6418 & 0.5354 & 0.7600 \\
+leakage-safe & Logistic Regression & 18 & 0.7647 & 0.8558 & 0.6727 & 0.6981 & 0.6491 & 0.4902 & 0.8000 \\
+leakage-safe & Random Forest & 18 & 0.7712 & 0.8608 & 0.6903 & 0.7358 & 0.6500 & 0.5125 & 0.7900 \\
+leakage-safe & Extra Trees & 18 & 0.7582 & 0.8577 & 0.6838 & 0.7547 & 0.6250 & 0.4965 & 0.7600 \\
+leakage-safe & XGBoost & 18 & 0.7516 & 0.8538 & 0.6667 & 0.7170 & 0.6230 & 0.4733 & 0.7700 \\
+leakage-safe & LightGBM & 18 & 0.7647 & 0.8515 & 0.6667 & 0.6792 & 0.6545 & 0.4851 & 0.8100 \\
+leakage-safe & CatBoost & 18 & 0.7778 & 0.8530 & 0.6909 & 0.7170 & 0.6667 & 0.5186 & 0.8100 \\
+leakage-safe & HEF-IAI Stacking & 18 & 0.7908 & 0.8574 & 0.7037 & 0.7170 & 0.6909 & 0.5424 & 0.8300 \\
+leakage-safe & Soft Voting (2:1:1) & 18 & 0.7647 & 0.8572 & 0.6786 & 0.7170 & 0.6441 & 0.4956 & 0.7900 \\
+leakage-safe & Logistic Regression & 19 & 0.6928 & 0.7802 & 0.5524 & 0.5472 & 0.5577 & 0.3186 & 0.7700 \\
+leakage-safe & Random Forest & 19 & 0.7255 & 0.7886 & 0.6250 & 0.6604 & 0.5932 & 0.4109 & 0.7600 \\
+leakage-safe & Extra Trees & 19 & 0.7190 & 0.7991 & 0.6126 & 0.6415 & 0.5862 & 0.3938 & 0.7600 \\
+leakage-safe & XGBoost & 19 & 0.7059 & 0.7757 & 0.5794 & 0.5849 & 0.5741 & 0.3534 & 0.7700 \\
+leakage-safe & LightGBM & 19 & 0.6993 & 0.7713 & 0.5741 & 0.5849 & 0.5636 & 0.3420 & 0.7600 \\
+leakage-safe & CatBoost & 19 & 0.7255 & 0.7904 & 0.5962 & 0.5849 & 0.6078 & 0.3885 & 0.8000 \\
+leakage-safe & HEF-IAI Stacking & 19 & 0.6993 & 0.7951 & 0.5660 & 0.5660 & 0.5660 & 0.3360 & 0.7700 \\
+leakage-safe & Soft Voting (2:1:1) & 19 & 0.6993 & 0.7891 & 0.5660 & 0.5660 & 0.5660 & 0.3360 & 0.7700 \\
+leakage-safe & Logistic Regression & 20 & 0.7273 & 0.8209 & 0.6379 & 0.6852 & 0.5968 & 0.4234 & 0.7500 \\
+leakage-safe & Random Forest & 20 & 0.7662 & 0.8194 & 0.6949 & 0.7593 & 0.6406 & 0.5125 & 0.7700 \\
+leakage-safe & Extra Trees & 20 & 0.7403 & 0.8398 & 0.6774 & 0.7778 & 0.6000 & 0.4770 & 0.7200 \\
+leakage-safe & XGBoost & 20 & 0.7532 & 0.8098 & 0.6667 & 0.7037 & 0.6333 & 0.4733 & 0.7800 \\
+leakage-safe & LightGBM & 20 & 0.7468 & 0.8163 & 0.6549 & 0.6852 & 0.6271 & 0.4566 & 0.7800 \\
+leakage-safe & CatBoost & 20 & 0.7532 & 0.8237 & 0.6724 & 0.7222 & 0.6290 & 0.4789 & 0.7700 \\
+leakage-safe & HEF-IAI Stacking & 20 & 0.7468 & 0.8378 & 0.6667 & 0.7222 & 0.6190 & 0.4680 & 0.7600 \\
+leakage-safe & Soft Voting (2:1:1) & 20 & 0.7532 & 0.8276 & 0.6724 & 0.7222 & 0.6290 & 0.4789 & 0.7700 \\
+leakage-safe & Logistic Regression & 21 & 0.8182 & 0.8754 & 0.7407 & 0.7407 & 0.7407 & 0.6007 & 0.8600 \\
+leakage-safe & Random Forest & 21 & 0.8182 & 0.8824 & 0.7455 & 0.7593 & 0.7321 & 0.6044 & 0.8500 \\
+leakage-safe & Extra Trees & 21 & 0.8247 & 0.8887 & 0.7611 & 0.7963 & 0.7288 & 0.6246 & 0.8400 \\
+leakage-safe & XGBoost & 21 & 0.8182 & 0.8780 & 0.7407 & 0.7407 & 0.7407 & 0.6007 & 0.8600 \\
+leakage-safe & LightGBM & 21 & 0.8312 & 0.8644 & 0.7636 & 0.7778 & 0.7500 & 0.6326 & 0.8600 \\
+leakage-safe & CatBoost & 21 & 0.8312 & 0.8874 & 0.7547 & 0.7407 & 0.7692 & 0.6263 & 0.8800 \\
+leakage-safe & HEF-IAI Stacking & 21 & 0.8117 & 0.8893 & 0.7290 & 0.7222 & 0.7358 & 0.5848 & 0.8600 \\
+leakage-safe & Soft Voting (2:1:1) & 21 & 0.8247 & 0.8869 & 0.7477 & 0.7407 & 0.7547 & 0.6134 & 0.8700 \\
+leakage-safe & Logistic Regression & 22 & 0.7857 & 0.8643 & 0.7130 & 0.7593 & 0.6721 & 0.5456 & 0.8000 \\
+leakage-safe & Random Forest & 22 & 0.7857 & 0.8550 & 0.7179 & 0.7778 & 0.6667 & 0.5510 & 0.7900 \\
+leakage-safe & Extra Trees & 22 & 0.7987 & 0.8707 & 0.7395 & 0.8148 & 0.6769 & 0.5843 & 0.7900 \\
+leakage-safe & XGBoost & 22 & 0.7597 & 0.8624 & 0.6838 & 0.7407 & 0.6349 & 0.4957 & 0.7700 \\
+leakage-safe & LightGBM & 22 & 0.7727 & 0.8452 & 0.6789 & 0.6852 & 0.6727 & 0.5031 & 0.8200 \\
+leakage-safe & CatBoost & 22 & 0.7857 & 0.8637 & 0.7130 & 0.7593 & 0.6721 & 0.5456 & 0.8000 \\
+leakage-safe & HEF-IAI Stacking & 22 & 0.8117 & 0.8717 & 0.7387 & 0.7593 & 0.7193 & 0.5922 & 0.8400 \\
+leakage-safe & Soft Voting (2:1:1) & 22 & 0.7922 & 0.8683 & 0.7241 & 0.7778 & 0.6774 & 0.5622 & 0.8000 \\
+leakage-safe & Logistic Regression & 23 & 0.7516 & 0.8492 & 0.6780 & 0.7547 & 0.6154 & 0.4858 & 0.7500 \\
+leakage-safe & Random Forest & 23 & 0.7712 & 0.8284 & 0.7059 & 0.7925 & 0.6364 & 0.5308 & 0.7600 \\
+leakage-safe & Extra Trees & 23 & 0.7516 & 0.8330 & 0.6833 & 0.7736 & 0.6119 & 0.4926 & 0.7400 \\
+leakage-safe & XGBoost & 23 & 0.7516 & 0.8558 & 0.6935 & 0.8113 & 0.6056 & 0.5069 & 0.7200 \\
+leakage-safe & LightGBM & 23 & 0.7647 & 0.8308 & 0.6897 & 0.7547 & 0.6349 & 0.5073 & 0.7700 \\
+leakage-safe & CatBoost & 23 & 0.7647 & 0.8443 & 0.7000 & 0.7925 & 0.6269 & 0.5203 & 0.7500 \\
+leakage-safe & HEF-IAI Stacking & 23 & 0.7712 & 0.8423 & 0.6957 & 0.7547 & 0.6452 & 0.5183 & 0.7800 \\
+leakage-safe & Soft Voting (2:1:1) & 23 & 0.7647 & 0.8485 & 0.7000 & 0.7925 & 0.6269 & 0.5203 & 0.7500 \\
+leakage-safe & Logistic Regression & 24 & 0.7386 & 0.8053 & 0.6491 & 0.6981 & 0.6066 & 0.4452 & 0.7600 \\
+leakage-safe & Random Forest & 24 & 0.7386 & 0.7840 & 0.6429 & 0.6792 & 0.6102 & 0.4392 & 0.7700 \\
+leakage-safe & Extra Trees & 24 & 0.7320 & 0.7975 & 0.6667 & 0.7736 & 0.5857 & 0.4619 & 0.7100 \\
+leakage-safe & XGBoost & 24 & 0.7320 & 0.7745 & 0.6372 & 0.6792 & 0.6000 & 0.4281 & 0.7600 \\
+leakage-safe & LightGBM & 24 & 0.7124 & 0.7708 & 0.5926 & 0.6038 & 0.5818 & 0.3706 & 0.7700 \\
+leakage-safe & CatBoost & 24 & 0.7320 & 0.7804 & 0.6239 & 0.6415 & 0.6071 & 0.4164 & 0.7800 \\
+leakage-safe & HEF-IAI Stacking & 24 & 0.7451 & 0.7909 & 0.6486 & 0.6792 & 0.6207 & 0.4504 & 0.7800 \\
+leakage-safe & Soft Voting (2:1:1) & 24 & 0.7516 & 0.7843 & 0.6607 & 0.6981 & 0.6271 & 0.4674 & 0.7800 \\
+leaky: class-median imputation & Logistic Regression & 0 & 0.7922 & 0.8635 & 0.7241 & 0.7778 & 0.6774 & 0.5622 & 0.8000 \\
+leaky: class-median imputation & Random Forest & 0 & 0.8636 & 0.9250 & 0.8205 & 0.8889 & 0.7619 & 0.7171 & 0.8500 \\
+leaky: class-median imputation & Extra Trees & 0 & 0.8571 & 0.9206 & 0.8167 & 0.9074 & 0.7424 & 0.7110 & 0.8300 \\
+leaky: class-median imputation & XGBoost & 0 & 0.8312 & 0.9343 & 0.7759 & 0.8333 & 0.7258 & 0.6454 & 0.8300 \\
+leaky: class-median imputation & LightGBM & 0 & 0.8377 & 0.9311 & 0.7788 & 0.8148 & 0.7458 & 0.6525 & 0.8500 \\
+leaky: class-median imputation & CatBoost & 0 & 0.8312 & 0.9246 & 0.7759 & 0.8333 & 0.7258 & 0.6454 & 0.8300 \\
+leaky: class-median imputation & HEF-IAI Stacking & 0 & 0.8377 & 0.9231 & 0.7826 & 0.8333 & 0.7377 & 0.6569 & 0.8400 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 0 & 0.8377 & 0.9230 & 0.7826 & 0.8333 & 0.7377 & 0.6569 & 0.8400 \\
+leaky: class-median imputation & Logistic Regression & 1 & 0.8636 & 0.9074 & 0.7961 & 0.7593 & 0.8367 & 0.6959 & 0.9200 \\
+leaky: class-median imputation & Random Forest & 1 & 0.8636 & 0.9226 & 0.8073 & 0.8148 & 0.8000 & 0.7019 & 0.8900 \\
+leaky: class-median imputation & Extra Trees & 1 & 0.8766 & 0.9237 & 0.8190 & 0.7963 & 0.8431 & 0.7262 & 0.9200 \\
+leaky: class-median imputation & XGBoost & 1 & 0.8766 & 0.9404 & 0.8288 & 0.8519 & 0.8070 & 0.7331 & 0.8900 \\
+leaky: class-median imputation & LightGBM & 1 & 0.8571 & 0.9367 & 0.7963 & 0.7963 & 0.7963 & 0.6863 & 0.8900 \\
+leaky: class-median imputation & CatBoost & 1 & 0.8571 & 0.9302 & 0.8000 & 0.8148 & 0.7857 & 0.6892 & 0.8800 \\
+leaky: class-median imputation & HEF-IAI Stacking & 1 & 0.8636 & 0.9300 & 0.8037 & 0.7963 & 0.8113 & 0.6993 & 0.9000 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 1 & 0.8506 & 0.9319 & 0.7890 & 0.7963 & 0.7818 & 0.6735 & 0.8800 \\
+leaky: class-median imputation & Logistic Regression & 2 & 0.8247 & 0.8957 & 0.7523 & 0.7593 & 0.7455 & 0.6167 & 0.8600 \\
+leaky: class-median imputation & Random Forest & 2 & 0.8701 & 0.9240 & 0.8214 & 0.8519 & 0.7931 & 0.7207 & 0.8800 \\
+leaky: class-median imputation & Extra Trees & 2 & 0.8766 & 0.9189 & 0.8348 & 0.8889 & 0.7869 & 0.7404 & 0.8700 \\
+leaky: class-median imputation & XGBoost & 2 & 0.8636 & 0.9315 & 0.8108 & 0.8333 & 0.7895 & 0.7050 & 0.8800 \\
+leaky: class-median imputation & LightGBM & 2 & 0.8442 & 0.9311 & 0.7857 & 0.8148 & 0.7586 & 0.6646 & 0.8600 \\
+leaky: class-median imputation & CatBoost & 2 & 0.8442 & 0.9283 & 0.7818 & 0.7963 & 0.7679 & 0.6609 & 0.8700 \\
+leaky: class-median imputation & HEF-IAI Stacking & 2 & 0.8506 & 0.9254 & 0.7928 & 0.8148 & 0.7719 & 0.6768 & 0.8700 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 2 & 0.8506 & 0.9256 & 0.7928 & 0.8148 & 0.7719 & 0.6768 & 0.8700 \\
+leaky: class-median imputation & Logistic Regression & 3 & 0.8170 & 0.8808 & 0.7667 & 0.8679 & 0.6866 & 0.6310 & 0.7900 \\
+leaky: class-median imputation & Random Forest & 3 & 0.8562 & 0.9475 & 0.8036 & 0.8491 & 0.7627 & 0.6932 & 0.8600 \\
+leaky: class-median imputation & Extra Trees & 3 & 0.8497 & 0.9428 & 0.8067 & 0.9057 & 0.7273 & 0.6972 & 0.8200 \\
+leaky: class-median imputation & XGBoost & 3 & 0.8693 & 0.9572 & 0.8276 & 0.9057 & 0.7619 & 0.7306 & 0.8500 \\
+leaky: class-median imputation & LightGBM & 3 & 0.8627 & 0.9575 & 0.8174 & 0.8868 & 0.7581 & 0.7141 & 0.8500 \\
+leaky: class-median imputation & CatBoost & 3 & 0.8889 & 0.9602 & 0.8496 & 0.9057 & 0.8000 & 0.7657 & 0.8800 \\
+leaky: class-median imputation & HEF-IAI Stacking & 3 & 0.8824 & 0.9532 & 0.8393 & 0.8868 & 0.7966 & 0.7496 & 0.8800 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 3 & 0.8889 & 0.9545 & 0.8496 & 0.9057 & 0.8000 & 0.7657 & 0.8800 \\
+leaky: class-median imputation & Logistic Regression & 4 & 0.7778 & 0.8715 & 0.7119 & 0.7925 & 0.6462 & 0.5414 & 0.7700 \\
+leaky: class-median imputation & Random Forest & 4 & 0.8431 & 0.9381 & 0.7895 & 0.8491 & 0.7377 & 0.6696 & 0.8400 \\
+leaky: class-median imputation & Extra Trees & 4 & 0.8170 & 0.9287 & 0.7586 & 0.8302 & 0.6984 & 0.6189 & 0.8100 \\
+leaky: class-median imputation & XGBoost & 4 & 0.8562 & 0.9513 & 0.8000 & 0.8302 & 0.7719 & 0.6891 & 0.8700 \\
+leaky: class-median imputation & LightGBM & 4 & 0.8627 & 0.9408 & 0.8073 & 0.8302 & 0.7857 & 0.7015 & 0.8800 \\
+leaky: class-median imputation & CatBoost & 4 & 0.8627 & 0.9466 & 0.8073 & 0.8302 & 0.7857 & 0.7015 & 0.8800 \\
+leaky: class-median imputation & HEF-IAI Stacking & 4 & 0.8627 & 0.9426 & 0.8073 & 0.8302 & 0.7857 & 0.7015 & 0.8800 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 4 & 0.8562 & 0.9464 & 0.8000 & 0.8302 & 0.7719 & 0.6891 & 0.8700 \\
+leaky: class-median imputation & Logistic Regression & 5 & 0.7857 & 0.8470 & 0.7130 & 0.7593 & 0.6721 & 0.5456 & 0.8000 \\
+leaky: class-median imputation & Random Forest & 5 & 0.8571 & 0.9205 & 0.8070 & 0.8519 & 0.7667 & 0.6965 & 0.8600 \\
+leaky: class-median imputation & Extra Trees & 5 & 0.8442 & 0.9102 & 0.7966 & 0.8704 & 0.7344 & 0.6781 & 0.8300 \\
+leaky: class-median imputation & XGBoost & 5 & 0.8701 & 0.9313 & 0.8214 & 0.8519 & 0.7931 & 0.7207 & 0.8800 \\
+leaky: class-median imputation & LightGBM & 5 & 0.8636 & 0.9298 & 0.8174 & 0.8704 & 0.7705 & 0.7126 & 0.8600 \\
+leaky: class-median imputation & CatBoost & 5 & 0.8636 & 0.9352 & 0.8205 & 0.8889 & 0.7619 & 0.7171 & 0.8500 \\
+leaky: class-median imputation & HEF-IAI Stacking & 5 & 0.8636 & 0.9283 & 0.8174 & 0.8704 & 0.7705 & 0.7126 & 0.8600 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 5 & 0.8636 & 0.9307 & 0.8205 & 0.8889 & 0.7619 & 0.7171 & 0.8500 \\
+leaky: class-median imputation & Logistic Regression & 6 & 0.8506 & 0.9013 & 0.7850 & 0.7778 & 0.7925 & 0.6707 & 0.8900 \\
+leaky: class-median imputation & Random Forest & 6 & 0.8766 & 0.9326 & 0.8257 & 0.8333 & 0.8182 & 0.7303 & 0.9000 \\
+leaky: class-median imputation & Extra Trees & 6 & 0.8766 & 0.9244 & 0.8190 & 0.7963 & 0.8431 & 0.7262 & 0.9200 \\
+leaky: class-median imputation & XGBoost & 6 & 0.8896 & 0.9457 & 0.8440 & 0.8519 & 0.8364 & 0.7587 & 0.9100 \\
+leaky: class-median imputation & LightGBM & 6 & 0.8831 & 0.9383 & 0.8333 & 0.8333 & 0.8333 & 0.7433 & 0.9100 \\
+leaky: class-median imputation & CatBoost & 6 & 0.8831 & 0.9422 & 0.8333 & 0.8333 & 0.8333 & 0.7433 & 0.9100 \\
+leaky: class-median imputation & HEF-IAI Stacking & 6 & 0.8896 & 0.9346 & 0.8440 & 0.8519 & 0.8364 & 0.7587 & 0.9100 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 6 & 0.8766 & 0.9350 & 0.8288 & 0.8519 & 0.8070 & 0.7331 & 0.8900 \\
+leaky: class-median imputation & Logistic Regression & 7 & 0.8506 & 0.9256 & 0.7810 & 0.7593 & 0.8039 & 0.6684 & 0.9000 \\
+leaky: class-median imputation & Random Forest & 7 & 0.9026 & 0.9527 & 0.8624 & 0.8704 & 0.8545 & 0.7871 & 0.9200 \\
+leaky: class-median imputation & Extra Trees & 7 & 0.8896 & 0.9602 & 0.8496 & 0.8889 & 0.8136 & 0.7645 & 0.8900 \\
+leaky: class-median imputation & XGBoost & 7 & 0.8896 & 0.9563 & 0.8440 & 0.8519 & 0.8364 & 0.7587 & 0.9100 \\
+leaky: class-median imputation & LightGBM & 7 & 0.8896 & 0.9559 & 0.8440 & 0.8519 & 0.8364 & 0.7587 & 0.9100 \\
+leaky: class-median imputation & CatBoost & 7 & 0.8896 & 0.9506 & 0.8440 & 0.8519 & 0.8364 & 0.7587 & 0.9100 \\
+leaky: class-median imputation & HEF-IAI Stacking & 7 & 0.8961 & 0.9559 & 0.8519 & 0.8519 & 0.8519 & 0.7719 & 0.9200 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 7 & 0.8896 & 0.9533 & 0.8440 & 0.8519 & 0.8364 & 0.7587 & 0.9100 \\
+leaky: class-median imputation & Logistic Regression & 8 & 0.7908 & 0.8542 & 0.7377 & 0.8491 & 0.6522 & 0.5824 & 0.7600 \\
+leaky: class-median imputation & Random Forest & 8 & 0.8693 & 0.9317 & 0.8246 & 0.8868 & 0.7705 & 0.7257 & 0.8600 \\
+leaky: class-median imputation & Extra Trees & 8 & 0.8693 & 0.9232 & 0.8276 & 0.9057 & 0.7619 & 0.7306 & 0.8500 \\
+leaky: class-median imputation & XGBoost & 8 & 0.8627 & 0.9394 & 0.8142 & 0.8679 & 0.7667 & 0.7094 & 0.8600 \\
+leaky: class-median imputation & LightGBM & 8 & 0.8758 & 0.9436 & 0.8288 & 0.8679 & 0.7931 & 0.7335 & 0.8800 \\
+leaky: class-median imputation & CatBoost & 8 & 0.8627 & 0.9306 & 0.8174 & 0.8868 & 0.7581 & 0.7141 & 0.8500 \\
+leaky: class-median imputation & HEF-IAI Stacking & 8 & 0.8693 & 0.9274 & 0.8214 & 0.8679 & 0.7797 & 0.7214 & 0.8700 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 8 & 0.8758 & 0.9313 & 0.8348 & 0.9057 & 0.7742 & 0.7421 & 0.8600 \\
+leaky: class-median imputation & Logistic Regression & 9 & 0.8039 & 0.8732 & 0.7321 & 0.7736 & 0.6949 & 0.5803 & 0.8200 \\
+leaky: class-median imputation & Random Forest & 9 & 0.8758 & 0.9375 & 0.8348 & 0.9057 & 0.7742 & 0.7421 & 0.8600 \\
+leaky: class-median imputation & Extra Trees & 9 & 0.8431 & 0.9281 & 0.8033 & 0.9245 & 0.7101 & 0.6928 & 0.8000 \\
+leaky: class-median imputation & XGBoost & 9 & 0.8889 & 0.9515 & 0.8496 & 0.9057 & 0.8000 & 0.7657 & 0.8800 \\
+leaky: class-median imputation & LightGBM & 9 & 0.8954 & 0.9506 & 0.8545 & 0.8868 & 0.8246 & 0.7743 & 0.9000 \\
+leaky: class-median imputation & CatBoost & 9 & 0.8889 & 0.9481 & 0.8496 & 0.9057 & 0.8000 & 0.7657 & 0.8800 \\
+leaky: class-median imputation & HEF-IAI Stacking & 9 & 0.8824 & 0.9462 & 0.8421 & 0.9057 & 0.7869 & 0.7538 & 0.8700 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 9 & 0.8824 & 0.9500 & 0.8421 & 0.9057 & 0.7869 & 0.7538 & 0.8700 \\
+leaky: class-median imputation & Logistic Regression & 10 & 0.8182 & 0.9187 & 0.7500 & 0.7778 & 0.7241 & 0.6084 & 0.8400 \\
+leaky: class-median imputation & Random Forest & 10 & 0.8961 & 0.9512 & 0.8519 & 0.8519 & 0.8519 & 0.7719 & 0.9200 \\
+leaky: class-median imputation & Extra Trees & 10 & 0.8766 & 0.9504 & 0.8288 & 0.8519 & 0.8070 & 0.7331 & 0.8900 \\
+leaky: class-median imputation & XGBoost & 10 & 0.8896 & 0.9613 & 0.8468 & 0.8704 & 0.8246 & 0.7613 & 0.9000 \\
+leaky: class-median imputation & LightGBM & 10 & 0.8831 & 0.9546 & 0.8364 & 0.8519 & 0.8214 & 0.7458 & 0.9000 \\
+leaky: class-median imputation & CatBoost & 10 & 0.8961 & 0.9585 & 0.8545 & 0.8704 & 0.8393 & 0.7741 & 0.9100 \\
+leaky: class-median imputation & HEF-IAI Stacking & 10 & 0.8961 & 0.9589 & 0.8545 & 0.8704 & 0.8393 & 0.7741 & 0.9100 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 10 & 0.8896 & 0.9607 & 0.8468 & 0.8704 & 0.8246 & 0.7613 & 0.9000 \\
+leaky: class-median imputation & Logistic Regression & 11 & 0.7597 & 0.8591 & 0.6942 & 0.7778 & 0.6269 & 0.5080 & 0.7500 \\
+leaky: class-median imputation & Random Forest & 11 & 0.8506 & 0.9357 & 0.8130 & 0.9259 & 0.7246 & 0.7062 & 0.8100 \\
+leaky: class-median imputation & Extra Trees & 11 & 0.8377 & 0.9298 & 0.8062 & 0.9630 & 0.6933 & 0.6997 & 0.7700 \\
+leaky: class-median imputation & XGBoost & 11 & 0.8442 & 0.9439 & 0.8033 & 0.9074 & 0.7206 & 0.6894 & 0.8100 \\
+leaky: class-median imputation & LightGBM & 11 & 0.8636 & 0.9441 & 0.8264 & 0.9259 & 0.7463 & 0.7276 & 0.8300 \\
+leaky: class-median imputation & CatBoost & 11 & 0.8442 & 0.9496 & 0.8065 & 0.9259 & 0.7143 & 0.6957 & 0.8000 \\
+leaky: class-median imputation & HEF-IAI Stacking & 11 & 0.8701 & 0.9411 & 0.8333 & 0.9259 & 0.7576 & 0.7385 & 0.8400 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 11 & 0.8506 & 0.9454 & 0.8130 & 0.9259 & 0.7246 & 0.7062 & 0.8100 \\
+leaky: class-median imputation & Logistic Regression & 12 & 0.8506 & 0.8904 & 0.7965 & 0.8333 & 0.7627 & 0.6805 & 0.8600 \\
+leaky: class-median imputation & Random Forest & 12 & 0.8831 & 0.9266 & 0.8364 & 0.8519 & 0.8214 & 0.7458 & 0.9000 \\
+leaky: class-median imputation & Extra Trees & 12 & 0.8571 & 0.9148 & 0.8070 & 0.8519 & 0.7667 & 0.6965 & 0.8600 \\
+leaky: class-median imputation & XGBoost & 12 & 0.8636 & 0.9361 & 0.8037 & 0.7963 & 0.8113 & 0.6993 & 0.9000 \\
+leaky: class-median imputation & LightGBM & 12 & 0.8506 & 0.9285 & 0.7850 & 0.7778 & 0.7925 & 0.6707 & 0.8900 \\
+leaky: class-median imputation & CatBoost & 12 & 0.8571 & 0.9317 & 0.7963 & 0.7963 & 0.7963 & 0.6863 & 0.8900 \\
+leaky: class-median imputation & HEF-IAI Stacking & 12 & 0.8701 & 0.9250 & 0.8148 & 0.8148 & 0.8148 & 0.7148 & 0.9000 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 12 & 0.8636 & 0.9274 & 0.8073 & 0.8148 & 0.8000 & 0.7019 & 0.8900 \\
+leaky: class-median imputation & Logistic Regression & 13 & 0.8170 & 0.8970 & 0.7544 & 0.8113 & 0.7049 & 0.6135 & 0.8200 \\
+leaky: class-median imputation & Random Forest & 13 & 0.8235 & 0.9166 & 0.7692 & 0.8491 & 0.7031 & 0.6357 & 0.8100 \\
+leaky: class-median imputation & Extra Trees & 13 & 0.8105 & 0.9153 & 0.7521 & 0.8302 & 0.6875 & 0.6079 & 0.8000 \\
+leaky: class-median imputation & XGBoost & 13 & 0.8235 & 0.9381 & 0.7692 & 0.8491 & 0.7031 & 0.6357 & 0.8100 \\
+leaky: class-median imputation & LightGBM & 13 & 0.8431 & 0.9281 & 0.7857 & 0.8302 & 0.7458 & 0.6649 & 0.8500 \\
+leaky: class-median imputation & CatBoost & 13 & 0.8431 & 0.9404 & 0.7931 & 0.8679 & 0.7302 & 0.6748 & 0.8300 \\
+leaky: class-median imputation & HEF-IAI Stacking & 13 & 0.8431 & 0.9306 & 0.7931 & 0.8679 & 0.7302 & 0.6748 & 0.8300 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 13 & 0.8301 & 0.9342 & 0.7797 & 0.8679 & 0.7077 & 0.6526 & 0.8100 \\
+leaky: class-median imputation & Logistic Regression & 14 & 0.8366 & 0.8755 & 0.7706 & 0.7925 & 0.7500 & 0.6445 & 0.8600 \\
+leaky: class-median imputation & Random Forest & 14 & 0.8889 & 0.9434 & 0.8411 & 0.8491 & 0.8333 & 0.7558 & 0.9100 \\
+leaky: class-median imputation & Extra Trees & 14 & 0.8693 & 0.9217 & 0.8182 & 0.8491 & 0.7895 & 0.7175 & 0.8800 \\
+leaky: class-median imputation & XGBoost & 14 & 0.8889 & 0.9415 & 0.8440 & 0.8679 & 0.8214 & 0.7585 & 0.9000 \\
+leaky: class-median imputation & LightGBM & 14 & 0.8889 & 0.9368 & 0.8411 & 0.8491 & 0.8333 & 0.7558 & 0.9100 \\
+leaky: class-median imputation & CatBoost & 14 & 0.8693 & 0.9283 & 0.8113 & 0.8113 & 0.8113 & 0.7113 & 0.9000 \\
+leaky: class-median imputation & HEF-IAI Stacking & 14 & 0.8824 & 0.9298 & 0.8302 & 0.8302 & 0.8302 & 0.7402 & 0.9100 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 14 & 0.8758 & 0.9311 & 0.8224 & 0.8302 & 0.8148 & 0.7270 & 0.9000 \\
+leaky: class-median imputation & Logistic Regression & 15 & 0.8182 & 0.8870 & 0.7358 & 0.7222 & 0.7500 & 0.5976 & 0.8700 \\
+leaky: class-median imputation & Random Forest & 15 & 0.9091 & 0.9396 & 0.8750 & 0.9074 & 0.8448 & 0.8050 & 0.9100 \\
+leaky: class-median imputation & Extra Trees & 15 & 0.9091 & 0.9398 & 0.8727 & 0.8889 & 0.8571 & 0.8024 & 0.9200 \\
+leaky: class-median imputation & XGBoost & 15 & 0.9221 & 0.9419 & 0.8889 & 0.8889 & 0.8889 & 0.8289 & 0.9400 \\
+leaky: class-median imputation & LightGBM & 15 & 0.9221 & 0.9467 & 0.8909 & 0.9074 & 0.8750 & 0.8307 & 0.9300 \\
+leaky: class-median imputation & CatBoost & 15 & 0.9156 & 0.9326 & 0.8829 & 0.9074 & 0.8596 & 0.8177 & 0.9200 \\
+leaky: class-median imputation & HEF-IAI Stacking & 15 & 0.9091 & 0.9417 & 0.8727 & 0.8889 & 0.8571 & 0.8024 & 0.9200 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 15 & 0.9221 & 0.9400 & 0.8909 & 0.9074 & 0.8750 & 0.8307 & 0.9300 \\
+leaky: class-median imputation & Logistic Regression & 16 & 0.8377 & 0.9070 & 0.7826 & 0.8333 & 0.7377 & 0.6569 & 0.8400 \\
+leaky: class-median imputation & Random Forest & 16 & 0.8701 & 0.9429 & 0.8246 & 0.8704 & 0.7833 & 0.7244 & 0.8700 \\
+leaky: class-median imputation & Extra Trees & 16 & 0.8636 & 0.9344 & 0.8174 & 0.8704 & 0.7705 & 0.7126 & 0.8600 \\
+leaky: class-median imputation & XGBoost & 16 & 0.8896 & 0.9572 & 0.8522 & 0.9074 & 0.8033 & 0.7682 & 0.8800 \\
+leaky: class-median imputation & LightGBM & 16 & 0.8506 & 0.9472 & 0.7965 & 0.8333 & 0.7627 & 0.6805 & 0.8600 \\
+leaky: class-median imputation & CatBoost & 16 & 0.8766 & 0.9541 & 0.8319 & 0.8704 & 0.7966 & 0.7365 & 0.8800 \\
+leaky: class-median imputation & HEF-IAI Stacking & 16 & 0.8766 & 0.9500 & 0.8319 & 0.8704 & 0.7966 & 0.7365 & 0.8800 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 16 & 0.8701 & 0.9522 & 0.8246 & 0.8704 & 0.7833 & 0.7244 & 0.8700 \\
+leaky: class-median imputation & Logistic Regression & 17 & 0.7987 & 0.8848 & 0.7257 & 0.7593 & 0.6949 & 0.5686 & 0.8200 \\
+leaky: class-median imputation & Random Forest & 17 & 0.8701 & 0.9370 & 0.8305 & 0.9074 & 0.7656 & 0.7334 & 0.8500 \\
+leaky: class-median imputation & Extra Trees & 17 & 0.8506 & 0.9283 & 0.8000 & 0.8519 & 0.7541 & 0.6848 & 0.8500 \\
+leaky: class-median imputation & XGBoost & 17 & 0.8831 & 0.9533 & 0.8475 & 0.9259 & 0.7812 & 0.7610 & 0.8600 \\
+leaky: class-median imputation & LightGBM & 17 & 0.8896 & 0.9556 & 0.8522 & 0.9074 & 0.8033 & 0.7682 & 0.8800 \\
+leaky: class-median imputation & CatBoost & 17 & 0.8766 & 0.9544 & 0.8403 & 0.9259 & 0.7692 & 0.7497 & 0.8500 \\
+leaky: class-median imputation & HEF-IAI Stacking & 17 & 0.8961 & 0.9402 & 0.8621 & 0.9259 & 0.8065 & 0.7842 & 0.8800 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 17 & 0.8896 & 0.9461 & 0.8547 & 0.9259 & 0.7937 & 0.7725 & 0.8700 \\
+leaky: class-median imputation & Logistic Regression & 18 & 0.8562 & 0.9117 & 0.7963 & 0.8113 & 0.7818 & 0.6855 & 0.8800 \\
+leaky: class-median imputation & Random Forest & 18 & 0.8562 & 0.9342 & 0.7800 & 0.7358 & 0.8298 & 0.6765 & 0.9200 \\
+leaky: class-median imputation & Extra Trees & 18 & 0.8366 & 0.9249 & 0.7619 & 0.7547 & 0.7692 & 0.6376 & 0.8800 \\
+leaky: class-median imputation & XGBoost & 18 & 0.8562 & 0.9498 & 0.7843 & 0.7547 & 0.8163 & 0.6779 & 0.9100 \\
+leaky: class-median imputation & LightGBM & 18 & 0.8693 & 0.9394 & 0.7959 & 0.7358 & 0.8667 & 0.7058 & 0.9400 \\
+leaky: class-median imputation & CatBoost & 18 & 0.8627 & 0.9419 & 0.7921 & 0.7547 & 0.8333 & 0.6919 & 0.9200 \\
+leaky: class-median imputation & HEF-IAI Stacking & 18 & 0.8562 & 0.9345 & 0.7755 & 0.7170 & 0.8444 & 0.6756 & 0.9300 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 18 & 0.8562 & 0.9372 & 0.7800 & 0.7358 & 0.8298 & 0.6765 & 0.9200 \\
+leaky: class-median imputation & Logistic Regression & 19 & 0.7712 & 0.8474 & 0.6957 & 0.7547 & 0.6452 & 0.5183 & 0.7800 \\
+leaky: class-median imputation & Random Forest & 19 & 0.8366 & 0.9207 & 0.7899 & 0.8868 & 0.7121 & 0.6694 & 0.8100 \\
+leaky: class-median imputation & Extra Trees & 19 & 0.8431 & 0.9085 & 0.7966 & 0.8868 & 0.7231 & 0.6803 & 0.8200 \\
+leaky: class-median imputation & XGBoost & 19 & 0.8562 & 0.9383 & 0.8136 & 0.9057 & 0.7385 & 0.7081 & 0.8300 \\
+leaky: class-median imputation & LightGBM & 19 & 0.8497 & 0.9396 & 0.8067 & 0.9057 & 0.7273 & 0.6972 & 0.8200 \\
+leaky: class-median imputation & CatBoost & 19 & 0.8497 & 0.9357 & 0.8067 & 0.9057 & 0.7273 & 0.6972 & 0.8200 \\
+leaky: class-median imputation & HEF-IAI Stacking & 19 & 0.8627 & 0.9266 & 0.8205 & 0.9057 & 0.7500 & 0.7193 & 0.8400 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 19 & 0.8562 & 0.9294 & 0.8136 & 0.9057 & 0.7385 & 0.7081 & 0.8300 \\
+leaky: class-median imputation & Logistic Regression & 20 & 0.7792 & 0.8819 & 0.7018 & 0.7407 & 0.6667 & 0.5291 & 0.8000 \\
+leaky: class-median imputation & Random Forest & 20 & 0.8636 & 0.9473 & 0.8174 & 0.8704 & 0.7705 & 0.7126 & 0.8600 \\
+leaky: class-median imputation & Extra Trees & 20 & 0.8571 & 0.9459 & 0.8167 & 0.9074 & 0.7424 & 0.7110 & 0.8300 \\
+leaky: class-median imputation & XGBoost & 20 & 0.8766 & 0.9513 & 0.8376 & 0.9074 & 0.7778 & 0.7448 & 0.8600 \\
+leaky: class-median imputation & LightGBM & 20 & 0.8701 & 0.9467 & 0.8276 & 0.8889 & 0.7742 & 0.7287 & 0.8600 \\
+leaky: class-median imputation & CatBoost & 20 & 0.8766 & 0.9546 & 0.8376 & 0.9074 & 0.7778 & 0.7448 & 0.8600 \\
+leaky: class-median imputation & HEF-IAI Stacking & 20 & 0.8701 & 0.9524 & 0.8276 & 0.8889 & 0.7742 & 0.7287 & 0.8600 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 20 & 0.8701 & 0.9548 & 0.8305 & 0.9074 & 0.7656 & 0.7334 & 0.8500 \\
+leaky: class-median imputation & Logistic Regression & 21 & 0.8701 & 0.9281 & 0.8148 & 0.8148 & 0.8148 & 0.7148 & 0.9000 \\
+leaky: class-median imputation & Random Forest & 21 & 0.9091 & 0.9635 & 0.8727 & 0.8889 & 0.8571 & 0.8024 & 0.9200 \\
+leaky: class-median imputation & Extra Trees & 21 & 0.8896 & 0.9581 & 0.8496 & 0.8889 & 0.8136 & 0.7645 & 0.8900 \\
+leaky: class-median imputation & XGBoost & 21 & 0.9156 & 0.9717 & 0.8829 & 0.9074 & 0.8596 & 0.8177 & 0.9200 \\
+leaky: class-median imputation & LightGBM & 21 & 0.9156 & 0.9698 & 0.8829 & 0.9074 & 0.8596 & 0.8177 & 0.9200 \\
+leaky: class-median imputation & CatBoost & 21 & 0.9156 & 0.9702 & 0.8807 & 0.8889 & 0.8727 & 0.8155 & 0.9300 \\
+leaky: class-median imputation & HEF-IAI Stacking & 21 & 0.9156 & 0.9681 & 0.8807 & 0.8889 & 0.8727 & 0.8155 & 0.9300 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 21 & 0.9156 & 0.9706 & 0.8807 & 0.8889 & 0.8727 & 0.8155 & 0.9300 \\
+leaky: class-median imputation & Logistic Regression & 22 & 0.8117 & 0.8907 & 0.7563 & 0.8333 & 0.6923 & 0.6119 & 0.8000 \\
+leaky: class-median imputation & Random Forest & 22 & 0.8636 & 0.9274 & 0.8108 & 0.8333 & 0.7895 & 0.7050 & 0.8800 \\
+leaky: class-median imputation & Extra Trees & 22 & 0.8571 & 0.9285 & 0.8070 & 0.8519 & 0.7667 & 0.6965 & 0.8600 \\
+leaky: class-median imputation & XGBoost & 22 & 0.8766 & 0.9428 & 0.8224 & 0.8148 & 0.8302 & 0.7280 & 0.9100 \\
+leaky: class-median imputation & LightGBM & 22 & 0.8701 & 0.9393 & 0.8148 & 0.8148 & 0.8148 & 0.7148 & 0.9000 \\
+leaky: class-median imputation & CatBoost & 22 & 0.8506 & 0.9356 & 0.7928 & 0.8148 & 0.7719 & 0.6768 & 0.8700 \\
+leaky: class-median imputation & HEF-IAI Stacking & 22 & 0.8701 & 0.9357 & 0.8113 & 0.7963 & 0.8269 & 0.7127 & 0.9100 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 22 & 0.8636 & 0.9369 & 0.8073 & 0.8148 & 0.8000 & 0.7019 & 0.8900 \\
+leaky: class-median imputation & Logistic Regression & 23 & 0.8235 & 0.8855 & 0.7692 & 0.8491 & 0.7031 & 0.6357 & 0.8100 \\
+leaky: class-median imputation & Random Forest & 23 & 0.8824 & 0.9366 & 0.8421 & 0.9057 & 0.7869 & 0.7538 & 0.8700 \\
+leaky: class-median imputation & Extra Trees & 23 & 0.8497 & 0.9300 & 0.8067 & 0.9057 & 0.7273 & 0.6972 & 0.8200 \\
+leaky: class-median imputation & XGBoost & 23 & 0.9020 & 0.9574 & 0.8649 & 0.9057 & 0.8276 & 0.7902 & 0.9000 \\
+leaky: class-median imputation & LightGBM & 23 & 0.9085 & 0.9547 & 0.8750 & 0.9245 & 0.8305 & 0.8060 & 0.9000 \\
+leaky: class-median imputation & CatBoost & 23 & 0.8889 & 0.9564 & 0.8496 & 0.9057 & 0.8000 & 0.7657 & 0.8800 \\
+leaky: class-median imputation & HEF-IAI Stacking & 23 & 0.8889 & 0.9462 & 0.8468 & 0.8868 & 0.8103 & 0.7618 & 0.8900 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 23 & 0.9020 & 0.9511 & 0.8673 & 0.9245 & 0.8167 & 0.7938 & 0.8900 \\
+leaky: class-median imputation & Logistic Regression & 24 & 0.8105 & 0.8419 & 0.7478 & 0.8113 & 0.6935 & 0.6022 & 0.8100 \\
+leaky: class-median imputation & Random Forest & 24 & 0.8431 & 0.8894 & 0.7857 & 0.8302 & 0.7458 & 0.6649 & 0.8500 \\
+leaky: class-median imputation & Extra Trees & 24 & 0.8366 & 0.8728 & 0.7788 & 0.8302 & 0.7333 & 0.6532 & 0.8400 \\
+leaky: class-median imputation & XGBoost & 24 & 0.8301 & 0.8883 & 0.7679 & 0.8113 & 0.7288 & 0.6367 & 0.8400 \\
+leaky: class-median imputation & LightGBM & 24 & 0.8301 & 0.8838 & 0.7636 & 0.7925 & 0.7368 & 0.6323 & 0.8500 \\
+leaky: class-median imputation & CatBoost & 24 & 0.8366 & 0.8951 & 0.7748 & 0.8113 & 0.7414 & 0.6486 & 0.8500 \\
+leaky: class-median imputation & HEF-IAI Stacking & 24 & 0.8431 & 0.8749 & 0.7818 & 0.8113 & 0.7544 & 0.6607 & 0.8600 \\
+leaky: class-median imputation & Soft Voting (2:1:1) & 24 & 0.8431 & 0.8787 & 0.7818 & 0.8113 & 0.7544 & 0.6607 & 0.8600 \\
+leaky (notebook protocol) & Logistic Regression & 0 & 0.7926 & 0.8452 & 0.8079 & 0.8723 & 0.7523 & 0.5927 & 0.7128 \\
+leaky (notebook protocol) & Random Forest & 0 & 0.8830 & 0.9512 & 0.8900 & 0.9468 & 0.8396 & 0.7723 & 0.8191 \\
+leaky (notebook protocol) & Extra Trees & 0 & 0.8564 & 0.9528 & 0.8696 & 0.9574 & 0.7965 & 0.7278 & 0.7553 \\
+leaky (notebook protocol) & XGBoost & 0 & 0.8936 & 0.9518 & 0.8990 & 0.9468 & 0.8558 & 0.7917 & 0.8404 \\
+leaky (notebook protocol) & LightGBM & 0 & 0.8989 & 0.9531 & 0.9045 & 0.9574 & 0.8571 & 0.8034 & 0.8404 \\
+leaky (notebook protocol) & CatBoost & 0 & 0.8777 & 0.9596 & 0.8856 & 0.9468 & 0.8318 & 0.7626 & 0.8085 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 0 & 0.8830 & 0.9577 & 0.8900 & 0.9468 & 0.8396 & 0.7723 & 0.8191 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 0 & 0.8777 & 0.9574 & 0.8867 & 0.9574 & 0.8257 & 0.7651 & 0.7979 \\
+leaky (notebook protocol) & Logistic Regression & 1 & 0.8610 & 0.9247 & 0.8602 & 0.8511 & 0.8696 & 0.7221 & 0.8710 \\
+leaky (notebook protocol) & Random Forest & 1 & 0.9198 & 0.9819 & 0.9198 & 0.9149 & 0.9247 & 0.8396 & 0.9247 \\
+leaky (notebook protocol) & Extra Trees & 1 & 0.9251 & 0.9834 & 0.9286 & 0.9681 & 0.8922 & 0.8533 & 0.8817 \\
+leaky (notebook protocol) & XGBoost & 1 & 0.9198 & 0.9759 & 0.9189 & 0.9043 & 0.9341 & 0.8400 & 0.9355 \\
+leaky (notebook protocol) & LightGBM & 1 & 0.9358 & 0.9787 & 0.9362 & 0.9362 & 0.9362 & 0.8717 & 0.9355 \\
+leaky (notebook protocol) & CatBoost & 1 & 0.9251 & 0.9785 & 0.9255 & 0.9255 & 0.9255 & 0.8503 & 0.9247 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 1 & 0.9305 & 0.9824 & 0.9312 & 0.9362 & 0.9263 & 0.8610 & 0.9247 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 1 & 0.9305 & 0.9808 & 0.9312 & 0.9362 & 0.9263 & 0.8610 & 0.9247 \\
+leaky (notebook protocol) & Logistic Regression & 2 & 0.8663 & 0.9307 & 0.8663 & 0.8617 & 0.8710 & 0.7327 & 0.8710 \\
+leaky (notebook protocol) & Random Forest & 2 & 0.9251 & 0.9763 & 0.9286 & 0.9681 & 0.8922 & 0.8533 & 0.8817 \\
+leaky (notebook protocol) & Extra Trees & 2 & 0.9305 & 0.9801 & 0.9333 & 0.9681 & 0.9010 & 0.8633 & 0.8925 \\
+leaky (notebook protocol) & XGBoost & 2 & 0.9358 & 0.9803 & 0.9381 & 0.9681 & 0.9100 & 0.8734 & 0.9032 \\
+leaky (notebook protocol) & LightGBM & 2 & 0.9412 & 0.9811 & 0.9430 & 0.9681 & 0.9192 & 0.8836 & 0.9140 \\
+leaky (notebook protocol) & CatBoost & 2 & 0.9358 & 0.9777 & 0.9381 & 0.9681 & 0.9100 & 0.8734 & 0.9032 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 2 & 0.9412 & 0.9808 & 0.9436 & 0.9787 & 0.9109 & 0.8848 & 0.9032 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 2 & 0.9412 & 0.9801 & 0.9436 & 0.9787 & 0.9109 & 0.8848 & 0.9032 \\
+leaky (notebook protocol) & Logistic Regression & 3 & 0.7701 & 0.8657 & 0.7571 & 0.7204 & 0.7976 & 0.5424 & 0.8191 \\
+leaky (notebook protocol) & Random Forest & 3 & 0.9037 & 0.9445 & 0.9032 & 0.9032 & 0.9032 & 0.8075 & 0.9043 \\
+leaky (notebook protocol) & Extra Trees & 3 & 0.8877 & 0.9341 & 0.8889 & 0.9032 & 0.8750 & 0.7758 & 0.8723 \\
+leaky (notebook protocol) & XGBoost & 3 & 0.8930 & 0.9504 & 0.8936 & 0.9032 & 0.8842 & 0.7863 & 0.8830 \\
+leaky (notebook protocol) & LightGBM & 3 & 0.8930 & 0.9437 & 0.8936 & 0.9032 & 0.8842 & 0.7863 & 0.8830 \\
+leaky (notebook protocol) & CatBoost & 3 & 0.9037 & 0.9443 & 0.9043 & 0.9140 & 0.8947 & 0.8077 & 0.8936 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 3 & 0.8930 & 0.9418 & 0.8936 & 0.9032 & 0.8842 & 0.7863 & 0.8830 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 3 & 0.8984 & 0.9437 & 0.8995 & 0.9140 & 0.8854 & 0.7972 & 0.8830 \\
+leaky (notebook protocol) & Logistic Regression & 4 & 0.8610 & 0.9353 & 0.8571 & 0.8387 & 0.8764 & 0.7225 & 0.8830 \\
+leaky (notebook protocol) & Random Forest & 4 & 0.9251 & 0.9681 & 0.9239 & 0.9140 & 0.9341 & 0.8504 & 0.9362 \\
+leaky (notebook protocol) & Extra Trees & 4 & 0.9198 & 0.9732 & 0.9189 & 0.9140 & 0.9239 & 0.8396 & 0.9255 \\
+leaky (notebook protocol) & XGBoost & 4 & 0.9198 & 0.9703 & 0.9198 & 0.9247 & 0.9149 & 0.8396 & 0.9149 \\
+leaky (notebook protocol) & LightGBM & 4 & 0.9037 & 0.9714 & 0.9043 & 0.9140 & 0.8947 & 0.8077 & 0.8936 \\
+leaky (notebook protocol) & CatBoost & 4 & 0.9305 & 0.9714 & 0.9297 & 0.9247 & 0.9348 & 0.8610 & 0.9362 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 4 & 0.9251 & 0.9736 & 0.9239 & 0.9140 & 0.9341 & 0.8504 & 0.9362 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 4 & 0.9251 & 0.9737 & 0.9247 & 0.9247 & 0.9247 & 0.8503 & 0.9255 \\
+leaky (notebook protocol) & Logistic Regression & 5 & 0.8032 & 0.9045 & 0.8021 & 0.7979 & 0.8065 & 0.6064 & 0.8085 \\
+leaky (notebook protocol) & Random Forest & 5 & 0.8936 & 0.9572 & 0.8990 & 0.9468 & 0.8558 & 0.7917 & 0.8404 \\
+leaky (notebook protocol) & Extra Trees & 5 & 0.8883 & 0.9645 & 0.8945 & 0.9468 & 0.8476 & 0.7820 & 0.8298 \\
+leaky (notebook protocol) & XGBoost & 5 & 0.8723 & 0.9617 & 0.8763 & 0.9043 & 0.8500 & 0.7462 & 0.8404 \\
+leaky (notebook protocol) & LightGBM & 5 & 0.8936 & 0.9636 & 0.8969 & 0.9255 & 0.8700 & 0.7888 & 0.8617 \\
+leaky (notebook protocol) & CatBoost & 5 & 0.8830 & 0.9616 & 0.8866 & 0.9149 & 0.8600 & 0.7675 & 0.8511 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 5 & 0.8936 & 0.9651 & 0.8980 & 0.9362 & 0.8627 & 0.7901 & 0.8511 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 5 & 0.8830 & 0.9631 & 0.8878 & 0.9255 & 0.8529 & 0.7687 & 0.8404 \\
+leaky (notebook protocol) & Logistic Regression & 6 & 0.8556 & 0.8839 & 0.8556 & 0.8511 & 0.8602 & 0.7113 & 0.8602 \\
+leaky (notebook protocol) & Random Forest & 6 & 0.9091 & 0.9635 & 0.9119 & 0.9362 & 0.8889 & 0.8193 & 0.8817 \\
+leaky (notebook protocol) & Extra Trees & 6 & 0.8824 & 0.9635 & 0.8878 & 0.9255 & 0.8529 & 0.7674 & 0.8387 \\
+leaky (notebook protocol) & XGBoost & 6 & 0.8930 & 0.9640 & 0.8969 & 0.9255 & 0.8700 & 0.7876 & 0.8602 \\
+leaky (notebook protocol) & LightGBM & 6 & 0.8984 & 0.9642 & 0.9036 & 0.9468 & 0.8641 & 0.8004 & 0.8495 \\
+leaky (notebook protocol) & CatBoost & 6 & 0.8930 & 0.9667 & 0.8980 & 0.9362 & 0.8627 & 0.7889 & 0.8495 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 6 & 0.9037 & 0.9661 & 0.9072 & 0.9362 & 0.8800 & 0.8091 & 0.8710 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 6 & 0.8984 & 0.9668 & 0.9026 & 0.9362 & 0.8713 & 0.7989 & 0.8602 \\
+leaky (notebook protocol) & Logistic Regression & 7 & 0.8556 & 0.9144 & 0.8643 & 0.9149 & 0.8190 & 0.7160 & 0.7957 \\
+leaky (notebook protocol) & Random Forest & 7 & 0.9305 & 0.9788 & 0.9326 & 0.9574 & 0.9091 & 0.8622 & 0.9032 \\
+leaky (notebook protocol) & Extra Trees & 7 & 0.9412 & 0.9752 & 0.9447 & 1.0000 & 0.8952 & 0.8885 & 0.8817 \\
+leaky (notebook protocol) & XGBoost & 7 & 0.9358 & 0.9799 & 0.9381 & 0.9681 & 0.9100 & 0.8734 & 0.9032 \\
+leaky (notebook protocol) & LightGBM & 7 & 0.9358 & 0.9779 & 0.9381 & 0.9681 & 0.9100 & 0.8734 & 0.9032 \\
+leaky (notebook protocol) & CatBoost & 7 & 0.9519 & 0.9804 & 0.9538 & 0.9894 & 0.9208 & 0.9062 & 0.9140 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 7 & 0.9412 & 0.9786 & 0.9430 & 0.9681 & 0.9192 & 0.8836 & 0.9140 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 7 & 0.9465 & 0.9799 & 0.9485 & 0.9787 & 0.9200 & 0.8949 & 0.9140 \\
+leaky (notebook protocol) & Logistic Regression & 8 & 0.7861 & 0.8809 & 0.7753 & 0.7419 & 0.8118 & 0.5741 & 0.8298 \\
+leaky (notebook protocol) & Random Forest & 8 & 0.9091 & 0.9677 & 0.9050 & 0.8710 & 0.9419 & 0.8204 & 0.9468 \\
+leaky (notebook protocol) & Extra Trees & 8 & 0.9091 & 0.9636 & 0.9081 & 0.9032 & 0.9130 & 0.8182 & 0.9149 \\
+leaky (notebook protocol) & XGBoost & 8 & 0.9091 & 0.9676 & 0.9050 & 0.8710 & 0.9419 & 0.8204 & 0.9468 \\
+leaky (notebook protocol) & LightGBM & 8 & 0.9037 & 0.9687 & 0.9011 & 0.8817 & 0.9213 & 0.8082 & 0.9255 \\
+leaky (notebook protocol) & CatBoost & 8 & 0.9144 & 0.9669 & 0.9121 & 0.8925 & 0.9326 & 0.8296 & 0.9362 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 8 & 0.9091 & 0.9684 & 0.9029 & 0.8495 & 0.9634 & 0.8238 & 0.9681 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 8 & 0.9251 & 0.9684 & 0.9222 & 0.8925 & 0.9540 & 0.8520 & 0.9574 \\
+leaky (notebook protocol) & Logistic Regression & 9 & 0.8556 & 0.9240 & 0.8525 & 0.8387 & 0.8667 & 0.7115 & 0.8723 \\
+leaky (notebook protocol) & Random Forest & 9 & 0.9358 & 0.9713 & 0.9368 & 0.9570 & 0.9175 & 0.8725 & 0.9149 \\
+leaky (notebook protocol) & Extra Trees & 9 & 0.9358 & 0.9747 & 0.9381 & 0.9785 & 0.9010 & 0.8749 & 0.8936 \\
+leaky (notebook protocol) & XGBoost & 9 & 0.9305 & 0.9804 & 0.9297 & 0.9247 & 0.9348 & 0.8610 & 0.9362 \\
+leaky (notebook protocol) & LightGBM & 9 & 0.9251 & 0.9802 & 0.9239 & 0.9140 & 0.9341 & 0.8504 & 0.9362 \\
+leaky (notebook protocol) & CatBoost & 9 & 0.9465 & 0.9770 & 0.9474 & 0.9677 & 0.9278 & 0.8939 & 0.9255 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 9 & 0.9412 & 0.9790 & 0.9418 & 0.9570 & 0.9271 & 0.8828 & 0.9255 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 9 & 0.9519 & 0.9783 & 0.9529 & 0.9785 & 0.9286 & 0.9051 & 0.9255 \\
+leaky (notebook protocol) & Logistic Regression & 10 & 0.8085 & 0.8925 & 0.8043 & 0.7872 & 0.8222 & 0.6176 & 0.8298 \\
+leaky (notebook protocol) & Random Forest & 10 & 0.9043 & 0.9405 & 0.9053 & 0.9149 & 0.8958 & 0.8087 & 0.8936 \\
+leaky (notebook protocol) & Extra Trees & 10 & 0.8936 & 0.9476 & 0.8980 & 0.9362 & 0.8627 & 0.7901 & 0.8511 \\
+leaky (notebook protocol) & XGBoost & 10 & 0.8936 & 0.9545 & 0.8947 & 0.9043 & 0.8854 & 0.7874 & 0.8830 \\
+leaky (notebook protocol) & LightGBM & 10 & 0.8989 & 0.9553 & 0.9005 & 0.9149 & 0.8866 & 0.7983 & 0.8830 \\
+leaky (notebook protocol) & CatBoost & 10 & 0.9043 & 0.9560 & 0.9053 & 0.9149 & 0.8958 & 0.8087 & 0.8936 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 10 & 0.9043 & 0.9520 & 0.9062 & 0.9255 & 0.8878 & 0.8092 & 0.8830 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 10 & 0.9043 & 0.9526 & 0.9062 & 0.9255 & 0.8878 & 0.8092 & 0.8830 \\
+leaky (notebook protocol) & Logistic Regression & 11 & 0.8396 & 0.8982 & 0.8421 & 0.8511 & 0.8333 & 0.6793 & 0.8280 \\
+leaky (notebook protocol) & Random Forest & 11 & 0.9144 & 0.9609 & 0.9175 & 0.9468 & 0.8900 & 0.8305 & 0.8817 \\
+leaky (notebook protocol) & Extra Trees & 11 & 0.9037 & 0.9561 & 0.9091 & 0.9574 & 0.8654 & 0.8120 & 0.8495 \\
+leaky (notebook protocol) & XGBoost & 11 & 0.8984 & 0.9641 & 0.8995 & 0.9043 & 0.8947 & 0.7968 & 0.8925 \\
+leaky (notebook protocol) & LightGBM & 11 & 0.9037 & 0.9664 & 0.9053 & 0.9149 & 0.8958 & 0.8076 & 0.8925 \\
+leaky (notebook protocol) & CatBoost & 11 & 0.9091 & 0.9641 & 0.9110 & 0.9255 & 0.8969 & 0.8186 & 0.8925 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 11 & 0.9091 & 0.9628 & 0.9101 & 0.9149 & 0.9053 & 0.8182 & 0.9032 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 11 & 0.9144 & 0.9641 & 0.9167 & 0.9362 & 0.8980 & 0.8296 & 0.8925 \\
+leaky (notebook protocol) & Logistic Regression & 12 & 0.8449 & 0.9109 & 0.8449 & 0.8404 & 0.8495 & 0.6899 & 0.8495 \\
+leaky (notebook protocol) & Random Forest & 12 & 0.9144 & 0.9683 & 0.9140 & 0.9043 & 0.9239 & 0.8291 & 0.9247 \\
+leaky (notebook protocol) & Extra Trees & 12 & 0.9091 & 0.9683 & 0.9110 & 0.9255 & 0.8969 & 0.8186 & 0.8925 \\
+leaky (notebook protocol) & XGBoost & 12 & 0.9144 & 0.9717 & 0.9121 & 0.8830 & 0.9432 & 0.8306 & 0.9462 \\
+leaky (notebook protocol) & LightGBM & 12 & 0.9037 & 0.9787 & 0.9053 & 0.9149 & 0.8958 & 0.8076 & 0.8925 \\
+leaky (notebook protocol) & CatBoost & 12 & 0.9251 & 0.9717 & 0.9239 & 0.9043 & 0.9444 & 0.8511 & 0.9462 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 12 & 0.9251 & 0.9721 & 0.9222 & 0.8830 & 0.9651 & 0.8535 & 0.9677 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 12 & 0.9251 & 0.9720 & 0.9239 & 0.9043 & 0.9444 & 0.8511 & 0.9462 \\
+leaky (notebook protocol) & Logistic Regression & 13 & 0.8289 & 0.9188 & 0.8316 & 0.8495 & 0.8144 & 0.6584 & 0.8085 \\
+leaky (notebook protocol) & Random Forest & 13 & 0.9412 & 0.9828 & 0.9424 & 0.9677 & 0.9184 & 0.8836 & 0.9149 \\
+leaky (notebook protocol) & Extra Trees & 13 & 0.9465 & 0.9832 & 0.9485 & 0.9892 & 0.9109 & 0.8964 & 0.9043 \\
+leaky (notebook protocol) & XGBoost & 13 & 0.9144 & 0.9825 & 0.9184 & 0.9677 & 0.8738 & 0.8337 & 0.8617 \\
+leaky (notebook protocol) & LightGBM & 13 & 0.9251 & 0.9819 & 0.9278 & 0.9677 & 0.8911 & 0.8535 & 0.8830 \\
+leaky (notebook protocol) & CatBoost & 13 & 0.9358 & 0.9792 & 0.9381 & 0.9785 & 0.9010 & 0.8749 & 0.8936 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 13 & 0.9305 & 0.9838 & 0.9333 & 0.9785 & 0.8922 & 0.8650 & 0.8830 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 13 & 0.9358 & 0.9825 & 0.9381 & 0.9785 & 0.9010 & 0.8749 & 0.8936 \\
+leaky (notebook protocol) & Logistic Regression & 14 & 0.8396 & 0.9008 & 0.8387 & 0.8387 & 0.8387 & 0.6791 & 0.8404 \\
+leaky (notebook protocol) & Random Forest & 14 & 0.9037 & 0.9595 & 0.9072 & 0.9462 & 0.8713 & 0.8105 & 0.8617 \\
+leaky (notebook protocol) & Extra Trees & 14 & 0.8824 & 0.9581 & 0.8866 & 0.9247 & 0.8515 & 0.7676 & 0.8404 \\
+leaky (notebook protocol) & XGBoost & 14 & 0.9037 & 0.9626 & 0.9072 & 0.9462 & 0.8713 & 0.8105 & 0.8617 \\
+leaky (notebook protocol) & LightGBM & 14 & 0.9091 & 0.9580 & 0.9119 & 0.9462 & 0.8800 & 0.8206 & 0.8723 \\
+leaky (notebook protocol) & CatBoost & 14 & 0.8984 & 0.9671 & 0.9026 & 0.9462 & 0.8627 & 0.8006 & 0.8511 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 14 & 0.9037 & 0.9642 & 0.9062 & 0.9355 & 0.8788 & 0.8092 & 0.8723 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 14 & 0.8984 & 0.9661 & 0.9026 & 0.9462 & 0.8627 & 0.8006 & 0.8511 \\
+leaky (notebook protocol) & Logistic Regression & 15 & 0.8404 & 0.9414 & 0.8352 & 0.8085 & 0.8636 & 0.6822 & 0.8723 \\
+leaky (notebook protocol) & Random Forest & 15 & 0.9309 & 0.9865 & 0.9312 & 0.9362 & 0.9263 & 0.8618 & 0.9255 \\
+leaky (notebook protocol) & Extra Trees & 15 & 0.9309 & 0.9870 & 0.9333 & 0.9681 & 0.9010 & 0.8641 & 0.8936 \\
+leaky (notebook protocol) & XGBoost & 15 & 0.9309 & 0.9859 & 0.9319 & 0.9468 & 0.9175 & 0.8621 & 0.9149 \\
+leaky (notebook protocol) & LightGBM & 15 & 0.9468 & 0.9885 & 0.9479 & 0.9681 & 0.9286 & 0.8944 & 0.9255 \\
+leaky (notebook protocol) & CatBoost & 15 & 0.9255 & 0.9890 & 0.9278 & 0.9574 & 0.9000 & 0.8528 & 0.8936 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 15 & 0.9415 & 0.9906 & 0.9424 & 0.9574 & 0.9278 & 0.8834 & 0.9255 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 15 & 0.9415 & 0.9896 & 0.9436 & 0.9787 & 0.9109 & 0.8854 & 0.9043 \\
+leaky (notebook protocol) & Logistic Regression & 16 & 0.7968 & 0.8713 & 0.7979 & 0.7979 & 0.7979 & 0.5936 & 0.7957 \\
+leaky (notebook protocol) & Random Forest & 16 & 0.8770 & 0.9362 & 0.8757 & 0.8617 & 0.8901 & 0.7544 & 0.8925 \\
+leaky (notebook protocol) & Extra Trees & 16 & 0.8717 & 0.9345 & 0.8750 & 0.8936 & 0.8571 & 0.7439 & 0.8495 \\
+leaky (notebook protocol) & XGBoost & 16 & 0.8717 & 0.9494 & 0.8681 & 0.8404 & 0.8977 & 0.7449 & 0.9032 \\
+leaky (notebook protocol) & LightGBM & 16 & 0.8610 & 0.9496 & 0.8602 & 0.8511 & 0.8696 & 0.7221 & 0.8710 \\
+leaky (notebook protocol) & CatBoost & 16 & 0.8770 & 0.9425 & 0.8770 & 0.8723 & 0.8817 & 0.7541 & 0.8817 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 16 & 0.8770 & 0.9425 & 0.8743 & 0.8511 & 0.8989 & 0.7552 & 0.9032 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 16 & 0.8770 & 0.9421 & 0.8757 & 0.8617 & 0.8901 & 0.7544 & 0.8925 \\
+leaky (notebook protocol) & Logistic Regression & 17 & 0.8503 & 0.9266 & 0.8478 & 0.8298 & 0.8667 & 0.7012 & 0.8710 \\
+leaky (notebook protocol) & Random Forest & 17 & 0.9572 & 0.9834 & 0.9579 & 0.9681 & 0.9479 & 0.9146 & 0.9462 \\
+leaky (notebook protocol) & Extra Trees & 17 & 0.9305 & 0.9804 & 0.9333 & 0.9681 & 0.9010 & 0.8633 & 0.8925 \\
+leaky (notebook protocol) & XGBoost & 17 & 0.9465 & 0.9826 & 0.9474 & 0.9574 & 0.9375 & 0.8932 & 0.9355 \\
+leaky (notebook protocol) & LightGBM & 17 & 0.9519 & 0.9833 & 0.9524 & 0.9574 & 0.9474 & 0.9038 & 0.9462 \\
+leaky (notebook protocol) & CatBoost & 17 & 0.9626 & 0.9858 & 0.9634 & 0.9787 & 0.9485 & 0.9256 & 0.9462 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 17 & 0.9679 & 0.9858 & 0.9684 & 0.9787 & 0.9583 & 0.9360 & 0.9570 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 17 & 0.9626 & 0.9860 & 0.9634 & 0.9787 & 0.9485 & 0.9256 & 0.9462 \\
+leaky (notebook protocol) & Logistic Regression & 18 & 0.8503 & 0.8905 & 0.8542 & 0.8817 & 0.8283 & 0.7021 & 0.8191 \\
+leaky (notebook protocol) & Random Forest & 18 & 0.9037 & 0.9716 & 0.9091 & 0.9677 & 0.8571 & 0.8143 & 0.8404 \\
+leaky (notebook protocol) & Extra Trees & 18 & 0.9144 & 0.9692 & 0.9192 & 0.9785 & 0.8667 & 0.8359 & 0.8511 \\
+leaky (notebook protocol) & XGBoost & 18 & 0.9144 & 0.9743 & 0.9175 & 0.9570 & 0.8812 & 0.8320 & 0.8723 \\
+leaky (notebook protocol) & LightGBM & 18 & 0.9251 & 0.9739 & 0.9286 & 0.9785 & 0.8835 & 0.8552 & 0.8723 \\
+leaky (notebook protocol) & CatBoost & 18 & 0.9144 & 0.9690 & 0.9192 & 0.9785 & 0.8667 & 0.8359 & 0.8511 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 18 & 0.9144 & 0.9712 & 0.9184 & 0.9677 & 0.8738 & 0.8337 & 0.8617 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 18 & 0.9144 & 0.9713 & 0.9184 & 0.9677 & 0.8738 & 0.8337 & 0.8617 \\
+leaky (notebook protocol) & Logistic Regression & 19 & 0.8128 & 0.8711 & 0.8108 & 0.8065 & 0.8152 & 0.6257 & 0.8191 \\
+leaky (notebook protocol) & Random Forest & 19 & 0.8770 & 0.9512 & 0.8808 & 0.9140 & 0.8500 & 0.7562 & 0.8404 \\
+leaky (notebook protocol) & Extra Trees & 19 & 0.9091 & 0.9510 & 0.9128 & 0.9570 & 0.8725 & 0.8221 & 0.8617 \\
+leaky (notebook protocol) & XGBoost & 19 & 0.8930 & 0.9544 & 0.8969 & 0.9355 & 0.8614 & 0.7891 & 0.8511 \\
+leaky (notebook protocol) & LightGBM & 19 & 0.8984 & 0.9552 & 0.9016 & 0.9355 & 0.8700 & 0.7991 & 0.8617 \\
+leaky (notebook protocol) & CatBoost & 19 & 0.8984 & 0.9490 & 0.9016 & 0.9355 & 0.8700 & 0.7991 & 0.8617 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 19 & 0.9091 & 0.9553 & 0.9119 & 0.9462 & 0.8800 & 0.8206 & 0.8723 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 19 & 0.9091 & 0.9545 & 0.9128 & 0.9570 & 0.8725 & 0.8221 & 0.8617 \\
+leaky (notebook protocol) & Logistic Regression & 20 & 0.8191 & 0.8987 & 0.8152 & 0.7979 & 0.8333 & 0.6389 & 0.8404 \\
+leaky (notebook protocol) & Random Forest & 20 & 0.9255 & 0.9743 & 0.9271 & 0.9468 & 0.9082 & 0.8518 & 0.9043 \\
+leaky (notebook protocol) & Extra Trees & 20 & 0.9043 & 0.9707 & 0.9072 & 0.9362 & 0.8800 & 0.8102 & 0.8723 \\
+leaky (notebook protocol) & XGBoost & 20 & 0.9415 & 0.9716 & 0.9412 & 0.9362 & 0.9462 & 0.8830 & 0.9468 \\
+leaky (notebook protocol) & LightGBM & 20 & 0.9309 & 0.9723 & 0.9312 & 0.9362 & 0.9263 & 0.8618 & 0.9255 \\
+leaky (notebook protocol) & CatBoost & 20 & 0.9202 & 0.9731 & 0.9223 & 0.9468 & 0.8990 & 0.8416 & 0.8936 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 20 & 0.9309 & 0.9760 & 0.9319 & 0.9468 & 0.9175 & 0.8621 & 0.9149 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 20 & 0.9255 & 0.9754 & 0.9278 & 0.9574 & 0.9000 & 0.8528 & 0.8936 \\
+leaky (notebook protocol) & Logistic Regression & 21 & 0.8610 & 0.9155 & 0.8617 & 0.8617 & 0.8617 & 0.7219 & 0.8602 \\
+leaky (notebook protocol) & Random Forest & 21 & 0.9251 & 0.9576 & 0.9271 & 0.9468 & 0.9082 & 0.8510 & 0.9032 \\
+leaky (notebook protocol) & Extra Trees & 21 & 0.9091 & 0.9672 & 0.9137 & 0.9574 & 0.8738 & 0.8219 & 0.8602 \\
+leaky (notebook protocol) & XGBoost & 21 & 0.9091 & 0.9582 & 0.9128 & 0.9468 & 0.8812 & 0.8204 & 0.8710 \\
+leaky (notebook protocol) & LightGBM & 21 & 0.9091 & 0.9579 & 0.9128 & 0.9468 & 0.8812 & 0.8204 & 0.8710 \\
+leaky (notebook protocol) & CatBoost & 21 & 0.9144 & 0.9603 & 0.9175 & 0.9468 & 0.8900 & 0.8305 & 0.8817 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 21 & 0.9198 & 0.9668 & 0.9223 & 0.9468 & 0.8990 & 0.8407 & 0.8925 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 21 & 0.9198 & 0.9652 & 0.9231 & 0.9574 & 0.8911 & 0.8419 & 0.8817 \\
+leaky (notebook protocol) & Logistic Regression & 22 & 0.8503 & 0.9088 & 0.8526 & 0.8617 & 0.8438 & 0.7007 & 0.8387 \\
+leaky (notebook protocol) & Random Forest & 22 & 0.8824 & 0.9608 & 0.8878 & 0.9255 & 0.8529 & 0.7674 & 0.8387 \\
+leaky (notebook protocol) & Extra Trees & 22 & 0.8930 & 0.9691 & 0.8969 & 0.9255 & 0.8700 & 0.7876 & 0.8602 \\
+leaky (notebook protocol) & XGBoost & 22 & 0.8930 & 0.9623 & 0.8990 & 0.9468 & 0.8558 & 0.7905 & 0.8387 \\
+leaky (notebook protocol) & LightGBM & 22 & 0.8930 & 0.9620 & 0.8990 & 0.9468 & 0.8558 & 0.7905 & 0.8387 \\
+leaky (notebook protocol) & CatBoost & 22 & 0.8930 & 0.9625 & 0.8980 & 0.9362 & 0.8627 & 0.7889 & 0.8495 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 22 & 0.8877 & 0.9672 & 0.8934 & 0.9362 & 0.8544 & 0.7789 & 0.8387 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 22 & 0.8877 & 0.9665 & 0.8934 & 0.9362 & 0.8544 & 0.7789 & 0.8387 \\
+leaky (notebook protocol) & Logistic Regression & 23 & 0.8235 & 0.8945 & 0.8254 & 0.8387 & 0.8125 & 0.6474 & 0.8085 \\
+leaky (notebook protocol) & Random Forest & 23 & 0.8984 & 0.9605 & 0.8995 & 0.9140 & 0.8854 & 0.7972 & 0.8830 \\
+leaky (notebook protocol) & Extra Trees & 23 & 0.9091 & 0.9507 & 0.9119 & 0.9462 & 0.8800 & 0.8206 & 0.8723 \\
+leaky (notebook protocol) & XGBoost & 23 & 0.9305 & 0.9696 & 0.9312 & 0.9462 & 0.9167 & 0.8614 & 0.9149 \\
+leaky (notebook protocol) & LightGBM & 23 & 0.9144 & 0.9643 & 0.9149 & 0.9247 & 0.9053 & 0.8291 & 0.9043 \\
+leaky (notebook protocol) & CatBoost & 23 & 0.9198 & 0.9635 & 0.9215 & 0.9462 & 0.8980 & 0.8408 & 0.8936 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 23 & 0.9144 & 0.9596 & 0.9158 & 0.9355 & 0.8969 & 0.8297 & 0.8936 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 23 & 0.9198 & 0.9627 & 0.9215 & 0.9462 & 0.8980 & 0.8408 & 0.8936 \\
+leaky (notebook protocol) & Logistic Regression & 24 & 0.8021 & 0.8970 & 0.7956 & 0.7742 & 0.8182 & 0.6050 & 0.8298 \\
+leaky (notebook protocol) & Random Forest & 24 & 0.9144 & 0.9723 & 0.9158 & 0.9355 & 0.8969 & 0.8297 & 0.8936 \\
+leaky (notebook protocol) & Extra Trees & 24 & 0.9037 & 0.9700 & 0.9062 & 0.9355 & 0.8788 & 0.8092 & 0.8723 \\
+leaky (notebook protocol) & XGBoost & 24 & 0.9144 & 0.9722 & 0.9149 & 0.9247 & 0.9053 & 0.8291 & 0.9043 \\
+leaky (notebook protocol) & LightGBM & 24 & 0.9251 & 0.9728 & 0.9255 & 0.9355 & 0.9158 & 0.8505 & 0.9149 \\
+leaky (notebook protocol) & CatBoost & 24 & 0.9198 & 0.9732 & 0.9206 & 0.9355 & 0.9062 & 0.8400 & 0.9043 \\
+leaky (notebook protocol) & HEF-IAI Stacking & 24 & 0.9251 & 0.9765 & 0.9263 & 0.9462 & 0.9072 & 0.8511 & 0.9043 \\
+leaky (notebook protocol) & Soft Voting (2:1:1) & 24 & 0.9305 & 0.9751 & 0.9319 & 0.9570 & 0.9082 & 0.8622 & 0.9043 \\
+\bottomrule
+\end{tabular}

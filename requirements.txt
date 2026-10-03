@@ -1,0 +1,17 @@
+# Pinned runtime dependencies (training + API). Install the package with: pip install -e .
+numpy==2.5.3
+pandas==3.0.5
+scipy==1.18.1
+scikit-learn==1.9.1
+imbalanced-learn==0.14.2
+xgboost==3.4.1
+lightgbm==4.7.0
+catboost==1.2.10
+shap==0.52.0
+matplotlib==3.11.2
+pyyaml==6.0.3
+joblib==1.6.0
+fastapi==0.142.2
+uvicorn[standard]==0.52.4
+pydantic==2.13.5
+pydantic-settings==2.15.0

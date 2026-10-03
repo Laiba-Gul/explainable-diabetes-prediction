@@ -1,0 +1,25 @@
+# Honest re-evaluation of the PIMA experiments ("91% accuracy", "HEF-IAI" notebooks).
+# 768 rows is too small for a stable single split, so models are compared with
+# 5x5 repeated stratified cross-validation. The same models are run under the
+# leakage-safe protocol and under the original notebook protocol to measure how
+# much accuracy the leakage added.
+experiment: pima_cv
+title: PIMA
+dataset: pima
+protocol: repeated_cv
+seed: 42
+cv: {n_splits: 5, n_repeats: 5}
+models:
+  Logistic Regression: {type: logistic_regression, params: {max_iter: 2000}}
+  Random Forest: {type: random_forest, params: {n_estimators: 300, n_jobs: 2}}
+  Extra Trees: {type: extra_trees, params: {n_estimators: 500, max_depth: 12, n_jobs: 2}}
+  XGBoost: {type: xgboost, params: {n_estimators: 300, max_depth: 4, learning_rate: 0.03, subsample: 0.8, colsample_bytree: 0.8, n_jobs: 2}}
+  LightGBM: {type: lightgbm, params: {n_estimators: 300, learning_rate: 0.03, num_leaves: 15, n_jobs: 2}}
+  CatBoost: {type: catboost, params: {iterations: 500, depth: 6, learning_rate: 0.03, thread_count: 2}}
+  HEF-IAI Stacking: {type: stacking, estimators: [CatBoost, XGBoost, Extra Trees], cv: 5, final_estimator: {type: logistic_regression, params: {max_iter: 1000}}}
+  Soft Voting (2:1:1): {type: voting, estimators: [CatBoost, XGBoost, Extra Trees], weights: [2, 1, 1]}
+# Claims made in the original notebooks/figures (accuracy as fraction).
+reported:
+  - {claim: "HEF-IAI stacking 93.75% / AUC 0.956 (hard-coded figure)", model: HEF-IAI Stacking, accuracy: 0.9375, roc_auc: 0.956}
+  - {claim: "CatBoost baseline AUC 0.942 (hard-coded figure)", model: CatBoost, roc_auc: 0.942}
+  - {claim: "Soft-voting hybrid (notebook cell 12)", model: Soft Voting (2:1:1)}

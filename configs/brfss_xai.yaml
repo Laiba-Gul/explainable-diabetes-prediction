@@ -1,0 +1,33 @@
+# Reproduces notebook "Early_Diabetes_XAI_Colab" (classical + boosting models).
+# Protocol: 70/15/15 stratified split -> train-only 7-method consensus feature
+# selection (15 features) -> SMOTE-NC on training rows only -> scaler fitted on
+# original training rows -> fixed 0.5 threshold (as in the notebook).
+experiment: brfss_xai
+title: BRFSS 2015, SMOTE-NC
+dataset: brfss
+seed: 42
+drop_duplicates: false        # no respondent ID exists; repeated profiles are kept (documented)
+feature_selection: {method: consensus, k: 15}
+balance: {method: smote_nc, sampling_strategy: 1.0, min_ratio: 1.2}
+threshold_policy: fixed
+selection_metric: roc_auc
+bootstrap: 300
+export_model: false
+models:
+  Logistic Regression: {type: logistic_regression, family: Machine Learning, params: {max_iter: 2000, solver: lbfgs}}
+  SVM (calibrated LinearSVC): {type: linear_svm_calibrated, family: Machine Learning, params: {C: 1.0}}
+  Decision Tree: {type: decision_tree, family: Machine Learning, params: {max_depth: 10, min_samples_leaf: 20}}
+  Random Forest: {type: random_forest, params: {n_estimators: 400, min_samples_leaf: 2}}
+  XGBoost: {type: xgboost, params: {n_estimators: 500, max_depth: 5, learning_rate: 0.05, subsample: 0.85, colsample_bytree: 0.85}}
+  LightGBM: {type: lightgbm, params: {n_estimators: 500, learning_rate: 0.05, num_leaves: 31, subsample: 0.85, colsample_bytree: 0.85}}
+  CatBoost: {type: catboost, params: {iterations: 500, depth: 7, learning_rate: 0.05}}
+# Test-set numbers printed in the executed notebook (threshold 0.5), for verification.
+reported:
+  test:
+    CatBoost: {accuracy: 0.8525, precision: 0.4606, recall: 0.3402, f1: 0.3914, roc_auc: 0.8211, mcc: 0.3142}
+    LightGBM: {accuracy: 0.8487, precision: 0.4461, recall: 0.3568, f1: 0.3965, roc_auc: 0.8186, mcc: 0.3138}
+    Logistic Regression: {accuracy: 0.7358, precision: 0.3128, recall: 0.7490, f1: 0.4413, roc_auc: 0.8143, mcc: 0.3544}
+    SVM (calibrated LinearSVC): {accuracy: 0.7353, precision: 0.3127, recall: 0.7512, f1: 0.4416, roc_auc: 0.8148, mcc: 0.3551}
+    Random Forest: {accuracy: 0.8194, precision: 0.3805, recall: 0.4710, f1: 0.4209, roc_auc: 0.8005, mcc: 0.3179}
+    Decision Tree: {accuracy: 0.7769, precision: 0.3306, recall: 0.5866, f1: 0.4229, roc_auc: 0.7905, mcc: 0.3166}
+    XGBoost: {accuracy: 0.7913, precision: 0.3287, recall: 0.4777, f1: 0.3895, roc_auc: 0.7840, mcc: 0.2756}

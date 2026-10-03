@@ -1,0 +1,16 @@
+{
+  "experiment": "pima_cv",
+  "dataset_audit": {
+    "dataset": "pima",
+    "rows": 768,
+    "features": 8,
+    "positive": 268,
+    "negative": 500,
+    "positive_rate": 0.349,
+    "missing_cells": 0,
+    "duplicate_rows_extra_copies": 0,
+    "sha256": "6bfe5d0f379d17a0e0819b996407e3c09bf80febd4287f2ed212190dfff154af"
+  },
+  "seconds": 884.0,
+  "best_safe_model": "Logistic Regression"
+}

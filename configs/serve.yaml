@@ -1,0 +1,17 @@
+# Trains ONLY the model served by the API (used by the Docker build, ~1 min).
+# Identical data, split, seed and hyper-parameters to the CatBoost model in
+# brfss_ensemble.yaml, which was the best single tree model on VALIDATION ROC-AUC.
+# Threshold: F1-optimal on the validation set (screening operating point).
+experiment: brfss_serve
+title: BRFSS 2015 served model
+dataset: brfss
+seed: 42
+model_version: "1.0.0"
+feature_selection: {method: all}
+balance: {method: none}
+threshold_policy: f1
+selection_metric: roc_auc
+bootstrap: 200
+serve: {only_tree_models: true, threshold_policy: f1}
+models:
+  CatBoost: {type: catboost, params: {iterations: 900, learning_rate: 0.04, depth: 7, l2_leaf_reg: 5.0, thread_count: 2}}

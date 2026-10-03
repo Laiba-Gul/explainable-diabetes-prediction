@@ -1,0 +1,11 @@
+| claim | model | protocol | reported_accuracy | reproduced_accuracy_mean | reproduced_accuracy_std | reported_auc | reproduced_auc_mean |
+|---|---|---|---|---|---|---|---|
+| HEF-IAI stacking 93.75% / AUC 0.956 (hard-coded figure) | HEF-IAI Stacking | leakage-safe | 0.9375 | 0.7617 | 0.0349 | 0.9560 | 0.8374 |
+| HEF-IAI stacking 93.75% / AUC 0.956 (hard-coded figure) | HEF-IAI Stacking | leaky: class-median imputation | 0.9375 | 0.8739 | 0.0202 | 0.9560 | 0.9369 |
+| HEF-IAI stacking 93.75% / AUC 0.956 (hard-coded figure) | HEF-IAI Stacking | leaky (notebook protocol) | 0.9375 | 0.9169 | 0.0216 | 0.9560 | 0.9688 |
+| CatBoost baseline AUC 0.942 (hard-coded figure) | CatBoost | leakage-safe | nan | 0.7572 | 0.0358 | 0.9420 | 0.8307 |
+| CatBoost baseline AUC 0.942 (hard-coded figure) | CatBoost | leaky: class-median imputation | nan | 0.8693 | 0.0229 | 0.9420 | 0.9414 |
+| CatBoost baseline AUC 0.942 (hard-coded figure) | CatBoost | leaky (notebook protocol) | nan | 0.9152 | 0.0221 | 0.9420 | 0.9676 |
+| Soft-voting hybrid (notebook cell 12) | Soft Voting (2:1:1) | leakage-safe | nan | 0.7585 | 0.0365 | nan | 0.8342 |
+| Soft-voting hybrid (notebook cell 12) | Soft Voting (2:1:1) | leaky: class-median imputation | nan | 0.8708 | 0.0230 | nan | 0.9391 |
+| Soft-voting hybrid (notebook cell 12) | Soft Voting (2:1:1) | leaky (notebook protocol) | nan | 0.9177 | 0.0231 | nan | 0.9687 |

@@ -1,0 +1,52 @@
+name: Reproduce results
+
+# Re-runs every experiment from scratch on a clean GitHub runner (checksum-verified data download,
+# training, evaluation, figures) and commits the regenerated results/ back to the repository.
+# Any difference from the committed numbers shows up in the commit diff.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reproduce
+  cancel-in-progress: false
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - name: Install
+        run: |
+          python -m pip install -r requirements.txt
+          python -m pip install --no-deps -e .
+      - name: Download datasets (SHA-256 verified)
+        run: diabetes-xai download
+      - name: Run all experiments
+        run: |
+          diabetes-xai train configs/brfss_5050.yaml configs/brfss_xai.yaml configs/brfss_ensemble.yaml \
+            configs/serve.yaml configs/pima_cv.yaml
+          python scripts/subgroup_analysis.py artifacts/brfss_serve configs/serve.yaml
+          diabetes-xai report
+      - name: Upload full results (including vector PDF figures)
+        uses: actions/upload-artifact@v7
+        with:
+          name: results
+          path: results/
+      - name: Commit regenerated results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add results
+          git diff --cached --stat
+          git commit -m "Reproduce results on GitHub Actions (run ${{ github.run_id }})" || echo "No changes"
+          git push
